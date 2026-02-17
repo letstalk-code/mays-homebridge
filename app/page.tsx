@@ -8,7 +8,7 @@ import TypingEffect from "@/components/TypingEffect";
 export const metadata = {
   title: "May's HomeBridge - Your Trusted Real Estate Advocate",
   description:
-    "Stop wondering if you can afford a home. May's HomeBridge helps first-time buyers navigate real estate with expert advocacy. Book your $100 strategy session today.",
+    "Stop wondering if homeownership is possible for you. May's HomeBridge helps first-time buyers navigate real estate with expert guidance and advocacy. Book your $100 strategy session today.",
 };
 
 export default function HomePage() {
@@ -36,7 +36,7 @@ export default function HomePage() {
             </span>
             <h1 className={`${styles.heroTitle} fade-in stagger-1`}>
               You&apos;re Watching Everyone Else Buy Homes While You&apos;re Still
-              Wondering If You&apos;ll Ever Be Able To Afford One
+              Wondering If It&apos;s Really Possible For You
             </h1>
             <p className={styles.heroSubtitle}>
               What if the only thing standing between you and homeownership isn&apos;t
@@ -83,22 +83,16 @@ export default function HomePage() {
             </p>
             <p>Here&apos;s the truth nobody tells you:</p>
             <p>
-              The real estate process isn&apos;t designed for you. It&apos;s designed for
-              agents who want quick commissions, lenders who want to approve the
-              biggest loan possible, and sellers who want top dollar.
+              The homebuying process has a lot of moving parts. Financing,
+              inspections, negotiations, contracts &mdash; and most people go through
+              it without anyone truly in their corner, explaining what&apos;s happening
+              and making sure every decision is right for THEM.
             </p>
             <p>
               <strong>
-                Nobody in that equation is looking out for YOUR wallet.
-              </strong>{" "}
-              Nobody&apos;s asking &ldquo;Can they actually afford this 5 years from now?&rdquo;
-              Nobody&apos;s protecting you from the mistakes that cost first-time buyers
-              $30,000+ in the first 24 months.
-            </p>
-            <p>
-              And the worst part? You don&apos;t even know what questions to ask. You
-              don&apos;t know what&apos;s normal and what&apos;s a red flag. You don&apos;t know if
-              you&apos;re being taken advantage of... until it&apos;s too late.
+                Without the right guide, it&apos;s easy to miss things that cost
+                first-time buyers $30,000+ in the first 24 months.
+              </strong>
             </p>
 
             <div className={styles.pullQuote}>
@@ -140,19 +134,19 @@ export default function HomePage() {
               My name is Qunietta L May, and I run May&apos;s HomeBridge.
             </p>
             <p>
-              Here&apos;s what I do differently: Most agents work for the seller or
-              chase commissions.{" "}
+              I&apos;m a dedicated buyer&apos;s advocate.{" "}
               <strong>
-                I work for YOU. It&apos;s like having a lawyer, but for homebuying.
+                I work for YOU. It&apos;s like having a trusted guide for one of the
+                biggest decisions of your life.
               </strong>{" "}
-              I&apos;m your advocate who knows every trick, every trap, and every way
-              to protect your money.
+              I know the process inside and out, and I make sure you understand
+              every step and every number before you sign anything.
             </p>
             <p>
-              I&apos;m going to show you exactly how I help people who think they
-              can&apos;t afford a home discover they actually can. Plus, I&apos;ll show you how I
-              protect them from the costly mistakes that derail most first-time
-              buyers.
+              I&apos;m going to show you exactly how I help people who think
+              homeownership isn&apos;t possible for them discover that it actually is.
+              Plus, I&apos;ll show you how I protect them from the costly mistakes
+              that derail most first-time buyers.
             </p>
             <p>
               <strong>
@@ -161,31 +155,6 @@ export default function HomePage() {
               </strong>
             </p>
           </div>
-        </div>
-      </section>
-
-      {/* ========== IDENTITY SHIFT ========== */}
-      <section className={styles.identitySection}>
-        <div className={`${styles.identityContent} fade-in`}>
-          <span className="section-label">The Transformation</span>
-          <div className="gold-line-center"></div>
-          <h2>From &ldquo;I Don&apos;t Think I Can&rdquo; To &ldquo;Here Are My Keys&rdquo;</h2>
-          <p>
-            Right now, you&apos;re someone who wants to own a home but doesn&apos;t know
-            if you can.
-          </p>
-          <p>
-            Six months from now, you could be someone who walks into their own
-            place (not a landlord&apos;s property) and thinks:{" "}
-            <strong>
-              &ldquo;I can&apos;t believe I almost talked myself out of this.&rdquo;
-            </strong>
-          </p>
-          <p>
-            The difference between those two people isn&apos;t income. It&apos;s having
-            someone who knows how to turn &ldquo;I don&apos;t think I can afford it&rdquo; into
-            &ldquo;Here are your keys.&rdquo;
-          </p>
         </div>
       </section>
 
@@ -218,8 +187,8 @@ export default function HomePage() {
               <span className={styles.credBullet}>&#9670;</span>
               <p>
                 The young professional who almost overpaid by{" "}
-                <strong>$35,000</strong> because their agent wasn&apos;t negotiating for
-                THEM
+                <strong>$35,000</strong> &mdash; we caught it in time and negotiated
+                them a fair deal
               </p>
             </div>
           </div>
@@ -248,9 +217,9 @@ export default function HomePage() {
             <div className={styles.benefitIcon}>&#128176;</div>
             <h3>Know Your REAL Number</h3>
             <p>
-              You&apos;ll know exactly what you can afford. This is your REAL number,
-              not the inflated one the bank wants to approve. No more being
-              house-poor, stressed about every unexpected expense.
+              You&apos;ll know exactly what works for your life &mdash; not just what you
+              qualify for on paper. No more guessing. No more being house-poor,
+              stressed about every unexpected expense.
             </p>
           </div>
           <div className={`${styles.benefitCard} fade-in stagger-2`}>
@@ -266,9 +235,9 @@ export default function HomePage() {
             <div className={styles.benefitIcon}>&#128737;</div>
             <h3>Protection From Being Taken Advantage Of</h3>
             <p>
-              You&apos;ll never wonder if you&apos;re being taken advantage of. Sleep at
-              night knowing someone with experience is protecting YOUR best
-              interests, not the seller&apos;s or the bank&apos;s.
+              You&apos;ll never wonder if you&apos;re making the right call. Sleep at
+              night knowing someone with experience is in your corner, protecting
+              YOUR best interests every step of the way.
             </p>
           </div>
           <div className={`${styles.benefitCard} fade-in stagger-4`}>
@@ -393,9 +362,8 @@ export default function HomePage() {
               <div className={styles.offerItemContent}>
                 <h4>Direct Access to My Network</h4>
                 <p>
-                  Vetted lenders who won&apos;t screw you on rates, inspectors who
-                  actually find problems, and contractors who won&apos;t disappear
-                  mid-job.
+                  Vetted lenders, inspectors, and contractors from my personal
+                  network.
                 </p>
                 <span className={styles.valueTag}>$150 value</span>
               </div>
@@ -447,24 +415,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ========== GUARANTEE ========== */}
-      <section className={styles.guaranteeSection}>
-        <div className={`${styles.guaranteeBox} fade-in`}>
-          <div className={styles.guaranteeIcon}>&#128737;</div>
-          <h2>The HomeBridge Promise</h2>
-          <p>
-            If you attend the 60-minute strategy session and don&apos;t walk away
-            with at least one insight that changes how you think about buying a
-            home, I&apos;ll refund your $100 immediately. Plus, you can keep all
-            the materials.
-          </p>
-          <p>
-            <strong>No hassle. No questions. No &ldquo;let me think about it.&rdquo;</strong>
-          </p>
-          <p>You shouldn&apos;t pay for advice that doesn&apos;t help you.</p>
-        </div>
-      </section>
-
       {/* ========== WARNING / FINAL CLOSE ========== */}
       <section className={styles.warningSection}>
         <div className={styles.warningGrid}>
@@ -474,20 +424,6 @@ export default function HomePage() {
             <h2 className="section-title">
               Ready To Stop Wondering And Start Knowing?
             </h2>
-            <p>Here&apos;s what I know about you:</p>
-            <p>
-              You&apos;ve read this far, which means the desire is real. You actually
-              want this.
-            </p>
-            <p>
-              But I also know that most people who read this will do nothing.
-              They&apos;ll bookmark this page. They&apos;ll think &ldquo;I&apos;ll come back to it.&rdquo;
-              And then life happens, and they&apos;re still renting in 2027.
-            </p>
-            <p>
-              The people who act? They&apos;re the ones sending me photos of their new
-              living rooms six months from now.
-            </p>
             <div className={styles.pullQuote}>
               The gap between &ldquo;wanting to own a home&rdquo; and &ldquo;owning a home&rdquo; isn&apos;t
               money. It&apos;s decision.
@@ -530,8 +466,8 @@ export default function HomePage() {
             <p>
               <strong>P.S.</strong> Remember: I only take 12 clients per
               month, and spots fill quickly. The $100 session gets credited back
-              if we close together. And if you don&apos;t get value from the call, I
-              refund it anyway. You literally can&apos;t lose here.
+              toward your closing costs if we close together. You literally
+              can&apos;t lose here.
             </p>
           </div>
         </div>

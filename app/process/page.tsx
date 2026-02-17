@@ -5,7 +5,7 @@ import TimelineProgress from "@/components/TimelineProgress";
 export const metadata = {
   title: "How We Help First-Time Homebuyers | 5-Step System - May's HomeBridge",
   description:
-    "Discover the exact 5-step HomeBridge System that turns 'I don't think I can afford it' into 'Here are my keys.' No guesswork. No surprises. Just a clear path.",
+    "Discover the exact 5-step HomeBridge System that turns 'I don't know where to start' into 'Here are my keys.' No guesswork. No surprises. Just a clear path.",
 };
 
 export default function ProcessPage() {
@@ -17,8 +17,8 @@ export default function ProcessPage() {
           <span className="section-label">The 5-Step System</span>
           <div className="gold-line-center"></div>
           <h1>
-            The Exact 5-Step System That Turns &ldquo;I Don&apos;t Think I Can Afford
-            It&rdquo; Into &ldquo;Here Are My Keys&rdquo;
+            The Exact 5-Step System That Turns &ldquo;I Don&apos;t Know Where to
+            Start&rdquo; Into &ldquo;Here Are My Keys&rdquo;
           </h1>
           <p style={{ fontSize: "1.15rem", marginTop: "20px", maxWidth: "600px", margin: "20px auto 0" }}>
             No guesswork. No surprises. Just a clear path from where you are now
@@ -32,25 +32,13 @@ export default function ProcessPage() {
         <div className={`${styles.openingContent} fade-in`}>
           <p>The homebuying process feels like a black box.</p>
           <p>
-            You don&apos;t know where to start. You don&apos;t know what&apos;s normal. You
-            don&apos;t know if you&apos;re three weeks away from closing or three years
-            away from qualifying.
-          </p>
-          <p>And that uncertainty is paralyzing.</p>
-          <p>
             So you do nothing. Or you start Googling and get 47 different
             answers to the same question. Or you talk to a lender who approves
             you for way more than you should borrow, and now you&apos;re even more
             confused.
           </p>
-          <p>
-            Here&apos;s what nobody tells you: <strong>The process is actually simple when someone who knows what they&apos;re doing walks you through it.</strong>
-          </p>
-          <p>
-            Not &ldquo;simple&rdquo; like easy. Simple like clear. Like: &ldquo;Do this, then this, then this. Here&apos;s why. Here&apos;s what happens next.&rdquo;
-          </p>
           <div className={styles.callout}>
-            That&apos;s what the HomeBridge System does.
+            That&apos;s what the HomeBridge System fixes &mdash; a clear, step-by-step path from where you are now to homeowner.
           </div>
         </div>
       </section>
@@ -100,9 +88,9 @@ export default function ProcessPage() {
               <p>Clarity. You&apos;ll know if you&apos;re ready, what you can afford, and what needs to happen next.</p>
             </div>
             <div className={styles.stepInsight}>
-              Most agents skip this step. They just want to show you houses. I
-              do this because if we don&apos;t get your foundation right, everything
-              else falls apart.
+              This step is often overlooked, but it&apos;s critical. If we don&apos;t get
+              your foundation right, everything else falls apart &mdash; so we start
+              here before anything else.
             </div>
           </div>
 
@@ -114,7 +102,7 @@ export default function ProcessPage() {
             <p className={styles.stepContext}><strong>What Happens:</strong></p>
             <p>
               I connect you with vetted lenders from my network &mdash; people I
-              trust who won&apos;t screw you on rates or push you into a bad loan.
+              trust to give you fair rates and guide you toward the right loan.
             </p>
             <div className={styles.stepSubhead}>What You Get:</div>
             <div className={styles.stepList}>
@@ -285,37 +273,6 @@ export default function ProcessPage() {
         </div>
       </section>
 
-      {/* ========== ANTI-PROCESS ========== */}
-      <section className={styles.antiSection}>
-        <div className={`${styles.antiContent} fade-in`}>
-          <h2 className="section-title">What I DON&apos;T Do</h2>
-          <div className="gold-line"></div>
-          <div className={styles.antiList}>
-            <div className={styles.antiItem}>
-              <span className={styles.xIcon}>&#10007;</span>
-              <p>I don&apos;t push you into houses you can&apos;t afford</p>
-            </div>
-            <div className={styles.antiItem}>
-              <span className={styles.xIcon}>&#10007;</span>
-              <p>I don&apos;t rush you to &ldquo;act fast&rdquo; on a bad deal</p>
-            </div>
-            <div className={styles.antiItem}>
-              <span className={styles.xIcon}>&#10007;</span>
-              <p>I don&apos;t disappear after the offer is accepted</p>
-            </div>
-            <div className={styles.antiItem}>
-              <span className={styles.xIcon}>&#10007;</span>
-              <p>I don&apos;t work with 40 clients at once and forget your name</p>
-            </div>
-            <div className={styles.antiItem}>
-              <span className={styles.xIcon}>&#10007;</span>
-              <p>I don&apos;t prioritize my commission over your financial future</p>
-            </div>
-          </div>
-          <p><strong>I do the opposite. Every time.</strong></p>
-        </div>
-      </section>
-
       {/* ========== CTA ========== */}
       <section className={styles.processCta}>
         <div className={`${styles.processCtaContent} fade-in`}>
@@ -327,7 +284,7 @@ export default function ProcessPage() {
           </p>
           <p>
             60 minutes. $100 (credited back if we close together). We&apos;ll figure
-            out if you&apos;re ready, what you can afford, and what happens next.
+            out where you stand, what&apos;s possible for you, and what happens next.
           </p>
           <p>
             <strong>I only take 12 clients per month.</strong> Once those spots

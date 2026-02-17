@@ -27,7 +27,6 @@ export default function ContactPage() {
       {/* ========== OPENING ========== */}
       <section className={styles.forkSection}>
         <div className={`${styles.forkContent} fade-in`}>
-          <p>Here&apos;s the truth:</p>
           <p>
             There will never be a &ldquo;perfect time&rdquo; to buy a home. Interest rates
             will never be low enough. Inventory will never be perfect. Your
@@ -61,9 +60,10 @@ export default function ContactPage() {
               <div className={styles.pathLabel}>Path 2</div>
               <h3>Book A Session</h3>
               <p>
-                You get actual clarity on what you can afford, what&apos;s possible,
-                and what needs to happen next. Maybe you&apos;re ready now. Maybe you
-                need six months. But you&apos;ll KNOW instead of guessing. And if you&apos;re ready, we start building toward the moment you get your keys.
+                You get actual clarity on what&apos;s possible for you and what needs
+                to happen next. Maybe you&apos;re ready now. Maybe you need six months.
+                But you&apos;ll KNOW instead of guessing. And if you&apos;re ready, we
+                start building toward the moment you get your keys.
               </p>
             </div>
           </div>
@@ -170,24 +170,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ========== GUARANTEE ========== */}
-      <section className={styles.guaranteeSection}>
-        <div className={`${styles.guaranteeBox} fade-in`}>
-          <div className={styles.guaranteeIcon}>&#128737;</div>
-          <span className="section-label" style={{ color: 'var(--charcoal)', opacity: 0.6 }}>Final Reminder</span>
-          <h2>The HomeBridge Promise</h2>
-          <p>
-            If you attend the session and don&apos;t get at least ONE insight that
-            changes how you think about homebuying, email me and I&apos;ll refund
-            your $100 immediately.
-          </p>
-          <p>
-            <strong>No questions. No hassle. You keep the materials.</strong>
-          </p>
-          <p>You shouldn&apos;t pay for something that doesn&apos;t help you.</p>
-        </div>
-      </section>
-
       {/* ========== FINAL CLOSE ========== */}
       <section className={styles.finalClose}>
         <div className={`${styles.finalContent} fade-in`}>
@@ -205,10 +187,7 @@ export default function ContactPage() {
               <p>In contract. Or closing. Or sitting in YOUR living room thinking &ldquo;I can&apos;t believe I almost talked myself out of this.&rdquo;</p>
             </div>
           </div>
-          <p style={{ marginTop: '32px', fontSize: '1.2rem' }}>
-            The only difference between those two people is the decision you make in the next five minutes.
-          </p>
-          <p><strong>Which person do you want to be?</strong></p>
+          <p style={{ marginTop: '32px', fontSize: '1.2rem' }}><strong>Which person do you want to be?</strong></p>
 
           <div style={{ marginTop: "40px" }}>
             <h3 style={{ marginBottom: '20px', color: 'var(--charcoal)' }}>Book Your HomeBridge Strategy Session Now</h3>
@@ -319,21 +298,9 @@ export default function ContactPage() {
             <p><strong>P.S. &mdash; Remember:</strong></p>
             <ul className={styles.psList}>
               <li>Limited to 12 clients per month (spots fill fast &mdash; don&apos;t wait)</li>
-              <li>The $100 session fee gets credited back if we work together and close</li>
-              <li>If you don&apos;t get value from the call, I refund it &mdash; you can&apos;t lose</li>
+              <li>The $100 session fee gets credited back toward closing costs if we work together</li>
+              <li>You&apos;ll walk away with real clarity on your path to homeownership</li>
             </ul>
-
-            <p style={{ marginTop: '24px' }}>
-              <strong>P.P.S.</strong> &mdash; I know you&apos;re scared. Everyone is.
-              Buying a home is terrifying when you don&apos;t know what you&apos;re doing.
-              But you know what&apos;s more terrifying? Being 50 and still renting
-              because you were too afraid to try.
-            </p>
-            <p>
-              <strong>P.P.P.S.</strong> &mdash; Every single person whose story you
-              read on the Testimonials page was scared too. They all thought they
-              couldn&apos;t afford it. They were all wrong. You probably are too.
-            </p>
 
             <div style={{ textAlign: "center", marginTop: "40px" }}>
               <Link href="#" className="btn-primary">

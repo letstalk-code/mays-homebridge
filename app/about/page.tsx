@@ -5,7 +5,7 @@ import styles from "./page.module.css";
 export const metadata = {
   title: "Why Choose May's HomeBridge - Real Estate That Protects Your Interests",
   description:
-    "Most agents work against you. Qunietta L May works FOR you. Learn why May's HomeBridge caps clients at 12/month and fights for first-time buyers like family.",
+    "Qunietta L May works FOR you. Learn why May's HomeBridge caps clients at 12/month and goes the extra mile for every first-time buyer like family.",
 };
 
 export default function AboutPage() {
@@ -18,12 +18,11 @@ export default function AboutPage() {
             <span className="section-label">About May&apos;s HomeBridge</span>
             <div className="gold-line"></div>
             <h1>
-              Why Most Real Estate Agents Are Working Against You (And Why I&apos;m
-              Different)
+              Here to Guide You Through One of the Biggest Decisions of Your Life
             </h1>
             <p style={{ fontSize: "1.15rem", marginTop: "20px" }}>
-              The industry doesn&apos;t want you to know this &mdash; but I&apos;m going to
-              tell you anyway.
+              Homeownership is possible &mdash; you just need the right person in
+              your corner.
             </p>
           </div>
           <div className="fade-in-right">
@@ -43,48 +42,45 @@ export default function AboutPage() {
       <section className={styles.problemSection}>
         <div className={`${styles.problemContent} fade-in`}>
           <h2 className="section-title">
-            The System Isn&apos;t Built For You
+            The Homebuying Process Has a Lot of Moving Parts
           </h2>
           <div className="gold-line"></div>
           <p>
-            Let me tell you something most agents will never admit:
+            Most first-time buyers go into it without a clear picture of what
+            to expect &mdash; and that&apos;s where costly mistakes happen.
           </p>
-          <p>
-            The traditional real estate model isn&apos;t designed to help you. It&apos;s
-            designed to close deals fast.
-          </p>
-          <p>Here&apos;s how it works:</p>
+          <p>There&apos;s a lot to navigate:</p>
 
           <div className={styles.problemList}>
             <div className={styles.problemItem}>
               <span className={styles.bulletIcon}>&#9670;</span>
               <p>
-                <strong>The agent</strong> gets paid when you close &mdash; so
-                their incentive is to get you to close ASAP, even if it&apos;s not
-                the right house or the right time.
+                <strong>Financing</strong> &mdash; understanding what you actually
+                qualify for, what you can comfortably sustain, and which loan
+                product is right for YOUR situation.
               </p>
             </div>
             <div className={styles.problemItem}>
               <span className={styles.bulletIcon}>&#9670;</span>
               <p>
-                <strong>The lender</strong> gets paid when you borrow &mdash; so
-                their incentive is to approve you for the biggest loan possible,
-                even if it stretches you too thin.
+                <strong>The search</strong> &mdash; knowing what to look for, what
+                to avoid, and how to evaluate a property beyond what it looks
+                like online.
               </p>
             </div>
             <div className={styles.problemItem}>
               <span className={styles.bulletIcon}>&#9670;</span>
               <p>
-                <strong>The seller</strong> wants top dollar &mdash; so their
-                incentive is to make you pay more than you should.
+                <strong>Negotiations and contracts</strong> &mdash; making sure
+                every term protects you and you&apos;re not leaving money on the
+                table or signing something you don&apos;t fully understand.
               </p>
             </div>
           </div>
 
           <div className={styles.callout}>
-            Where in that equation is someone protecting YOU?<br />
-            <strong>Nowhere.</strong><br />
-            And that&apos;s the problem.
+            You deserve someone who walks you through all of it &mdash; clearly,
+            honestly, and with YOUR goals front and center.
           </div>
         </div>
       </section>
@@ -95,8 +91,8 @@ export default function AboutPage() {
           <span className="section-label">The Shift</span>
           <div className="gold-line"></div>
           <p>
-            I started May&apos;s HomeBridge because I got tired of watching good
-            people get steamrolled by a system that wasn&apos;t built for them.
+            I started May&apos;s HomeBridge because I wanted to be the resource I
+            wish I&apos;d had when I was navigating this process myself.
           </p>
           <p>
             I watched a young couple buy a house they loved &mdash; and{" "}
@@ -104,18 +100,12 @@ export default function AboutPage() {
             about the $12,000 in hidden maintenance costs that first year.
           </p>
           <p>
-            I watched a single mom get approved for a mortgage she could
-            &ldquo;afford&rdquo; on paper &mdash; but was{" "}
-            <strong>drowning within 6 months</strong> because the lender didn&apos;t
-            account for daycare, medical bills, or the fact that life happens.
-          </p>
-          <p>
             I watched a first-time buyer{" "}
-            <strong>overpay by $40,000</strong> because their agent didn&apos;t
-            negotiate and they didn&apos;t know any better.
+            <strong>overpay by $40,000</strong> because nobody walked them
+            through how to evaluate the offer and negotiate effectively.
           </p>
           <div className={styles.callout}>
-            And I thought: This is broken.<br />
+            And I thought: people deserve better support than this.<br />
             So I built something different.
           </div>
         </div>
@@ -133,14 +123,11 @@ export default function AboutPage() {
         <div className={styles.diffGrid}>
           <div className={`${styles.diffCard} fade-in`}>
             <div className={styles.diffNumber}>01</div>
-            <h3>I Work For You &mdash; Not The Commission</h3>
+            <h3>I Give You My Full Attention</h3>
             <p>
-              I cap my client load at 12 per month. Most agents juggle 30-50 at
-              a time because more deals = more money. I make less money this
-              way. But you get more attention.
-            </p>
-            <p style={{ marginTop: '1rem' }}>
-              You get someone who actually reads your inspection report, who negotiates like your money matters, who doesn&apos;t rush you into a bad decision because they need to close by Friday.
+              I cap my client load at 12 per month &mdash; intentionally. It means
+              I can go deep on your situation instead of spreading myself across
+              dozens of clients at once.
             </p>
             <p style={{ marginTop: '1rem', fontWeight: 600 }}>
               You&apos;re not a transaction number. You&apos;re a person making a huge decision.
@@ -148,12 +135,12 @@ export default function AboutPage() {
           </div>
           <div className={`${styles.diffCard} fade-in`}>
             <div className={styles.diffNumber}>02</div>
-            <h3>I Tell You The Truth &mdash; Even When It Hurts My Paycheck</h3>
+            <h3>I Always Tell You The Truth</h3>
             <p>
               If the house you love is overpriced, I&apos;ll tell you. If now isn&apos;t the right time to buy, I&apos;ll tell you. If you&apos;re about to make a $20,000 mistake, I&apos;ll stop you.
             </p>
             <p style={{ marginTop: '1rem' }}>
-              Even if it means I don&apos;t get paid this month. Most agents won&apos;t do that. I will. Every time.
+              My job is to make sure you get the right home at the right time &mdash; not just to close a deal. Every time.
             </p>
           </div>
           <div className={`${styles.diffCard} fade-in`}>
@@ -250,7 +237,7 @@ export default function AboutPage() {
               <span className={styles.checkGold}>&#10003;</span>
               <p>
                 Specialize in first-time buyers who{" "}
-                <strong>&ldquo;don&apos;t think they can afford it&rdquo;</strong>
+                <strong>aren&apos;t sure where to start or what&apos;s possible</strong>
               </p>
             </div>
             <div className={styles.credsItem}>
@@ -264,7 +251,7 @@ export default function AboutPage() {
               <span className={styles.checkGold}>&#10003;</span>
               <p>
                 Network of <strong>vetted lenders, inspectors, and contractors</strong>{" "}
-                who won&apos;t screw you
+                you can trust
               </p>
             </div>
             <div className={styles.credsItem}>
@@ -283,41 +270,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ========== TRANSITION TO CTA ========== */}
-      <section className={styles.optionsSection}>
-        <div className={`${styles.optionsContent} fade-in`}>
-          <h2 className="section-title">You&apos;ve Got Two Options</h2>
-          <div className="gold-line"></div>
-
-          <div className={styles.optionsGrid}>
-            <div className={`${styles.optionCard} ${styles.dimmed}`}>
-              <div className={styles.optionLabel}>Option 1</div>
-              <h3>The Traditional Route</h3>
-              <p>
-                Work with a traditional agent who&apos;s juggling 40 clients, rushing
-                you through decisions, and getting paid whether you win or lose.
-              </p>
-            </div>
-            <div className={`${styles.optionCard} ${styles.highlighted}`}>
-              <div className={styles.optionLabel}>Option 2</div>
-              <h3>The Smart Route</h3>
-              <p>
-                Work with someone who caps their client load, tells you the hard
-                truths, and only wins when you win.
-              </p>
-            </div>
-          </div>
-
-          <p className="text-center" style={{ marginTop: "24px" }}>
-            Most people pick Option 1 because it&apos;s easier to find.{" "}
-            <strong>Smart people pick Option 2</strong> because it&apos;s better.
-          </p>
-          <p className="text-center">
-            <strong>Which one are you?</strong>
-          </p>
-        </div>
-      </section>
-
       {/* ========== CTA ========== */}
       <section className={styles.aboutCta}>
         <div className={`${styles.aboutCtaContent} fade-in`}>
@@ -325,11 +277,8 @@ export default function AboutPage() {
           <p style={{ color: 'var(--gold)', fontWeight: 700, fontSize: '1.2rem', marginBottom: '16px' }}>
             60 minutes. $100 (credited back if we work together). Zero pressure.
           </p>
-          <p>
-            Let&apos;s talk about your situation, your goals, and whether homeownership is actually possible right now &mdash; or if waiting makes more sense.
-          </p>
           <p style={{ marginBottom: '32px' }}>
-            You&apos;ll walk away with clarity. And if we&apos;re a fit, we&apos;ll take the next step together.
+            Let&apos;s talk about your situation and whether homeownership makes sense right now &mdash; or if waiting is smarter. You&apos;ll walk away with clarity either way.
           </p>
           <Link href="/contact" className="btn-primary">
             Book Your Session Now
