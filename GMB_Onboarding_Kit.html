@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Business Onboarding Kit - May's Homebridge</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        :root {
+            --primary: #4e5a4e;
+            /* Sage */
+            --accent: #ef7938;
+            /* Orange */
+            --text: #1a1a1a;
+            --light: #f9f8eb;
+            /* Cream */
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 40px;
+            background-color: #f5f5f5;
+        }
+
+        .page {
+            background: white;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border-top: 8px solid var(--primary);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        .logo-container {
+            background: var(--primary);
+            padding: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 100px;
+        }
+
+        .logo {
+            max-height: 70px;
+            width: auto;
+            display: block;
+        }
+
+        .header-text {
+            text-align: right;
+        }
+
+        .header-text h1 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .header-text p {
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .onboarding-title {
+            color: var(--primary);
+            font-size: 2.25rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .onboarding-subtitle {
+            text-align: center;
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-size: 1.25rem;
+            margin-top: 40px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 50%;
+        }
+
+        .step-box {
+            background: var(--light);
+            padding: 25px;
+            border-radius: 6px;
+            margin: 20px 0;
+            border-left: 4px solid var(--accent);
+        }
+
+        ol,
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 12px;
+        }
+
+        blockquote {
+            background: #fff;
+            border: 1px solid #eee;
+            padding: 25px;
+            font-style: italic;
+            border-radius: 4px;
+            margin: 20px 0;
+            color: #555;
+            position: relative;
+        }
+
+        .highlight-text {
+            color: var(--accent);
+            font-weight: 700;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            font-size: 0.875rem;
+            color: #888;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .page {
+                box-shadow: none;
+                padding: 40px;
+                width: 100%;
+                border-top: none;
+            }
+
+            .logo-container {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <div class="logo-container">
+                <!-- Using local asset path for reliability -->
+                <img src="assets/logo.png" alt="CreativelyGrow Logo" class="logo">
+            </div>
+            <div class="header-text">
+                <h1>Strategic Growth Partner</h1>
+                <p>Mays Homebridge Integration</p>
+            </div>
+        </header>
+
+        <h1 class="onboarding-title">Google Business Onboarding Kit</h1>
+        <p class="onboarding-subtitle">Prepared for Success by CreativelyGrow</p>
+
+        <h2>1. Secure Access Setup</h2>
+        <div class="step-box">
+            <p>To handle your SEO and technical setup without needing your private passwords, please follow these steps:
+            </p>
+            <ol>
+                <li>Search Google for: <span class="highlight-text">"May's Homebridge"</span></li>
+                <li>In the menu, click the <strong>three vertical dots</strong> on the right side.</li>
+                <li>Go to <strong>Business Profile Settings</strong> > <strong>People and Access</strong>.</li>
+                <li>Click <strong>+ Add</strong> and enter our agency email: <span class="highlight-text">[YOUR
+                        EMAIL]</span></li>
+                <li>Select the <strong>Manager</strong> role and send the invite.</li>
+            </ol>
+        </div>
+
+        <h2>2. SEO-Optimized Business About</h2>
+        <div class="step-box">
+            <p>Use this pre-optimized description to ensure you rank for real estate searches:</p>
+            <blockquote>
+                "May's Homebridge is your premier real estate liaison, dedicated to building a seamless path to your
+                dream home. We bridge the gap between home seekers and the complex real estate market by providing
+                expert consultations, personalized guidance, and professional representation. Whether you are a
+                first-time homebuyer or looking for your next investment, May's Homebridge simplifies the process,
+                handles the heavy lifting, and ensures you make the most informed decision possible."
+            </blockquote>
+        </div>
+
+        <h2>3. Verification Assets Checklist</h2>
+        <p>Google requires proof of business validity. Please have these items ready for upload or video call:</p>
+        <ul>
+            <li><span class="highlight-text">Official Logo:</span> Provide the transparent high-res logo we finalized.
+            </li>
+            <li><span class="highlight-text">Legal Proof:</span> Business registration, license, or a recent utility
+                bill in the business name.</li>
+            <li><span class="highlight-text">Visual Trust:</span> Photos of your workspace, team, or branded
+                equipment/cards.</li>
+        </ul>
+
+        <h2>4. Growth & Automation Features</h2>
+        <p>Once access is granted, we will activate these premium tools for you:</p>
+        <ul>
+            <li><strong>Auto-Nurture:</strong> Instant AI-powered replies to all Google messages.</li>
+            <li><strong>Review Engine:</strong> Automatic requests to build your 5-star reputation.</li>
+            <li><strong>Live Chat Integration:</strong> Enabling direct "Chat" buttons on your Google search listing for
+                instant lead capture.</li>
+        </ul>
+
+        <footer>
+            &copy; 2026 CreativelyGrow &bull; Helping Businesses Grow Creatively &bull; Confidential
+        </footer>
+    </div>
+</body>
+
+</html>

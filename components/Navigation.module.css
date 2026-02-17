@@ -1,0 +1,189 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #000000;
+  /* Black background */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav.scrolled {
+  background: rgba(0, 0, 0, 0.95);
+  /* Slightly transparent black on scroll */
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(197, 165, 90, 0.3);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+  /* Increased height for larger logo */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  z-index: 1001;
+}
+
+.logoImage {
+  height: auto;
+  width: auto;
+  max-height: 120px;
+  /* Increased logo size */
+}
+
+/* Hide text if the logo image already contains it, or style it white */
+.logoText {
+  display: none;
+  /* Assuming the new logo image has text included based on the "make the logo this size" request often implying the image itself is the full logo */
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.link {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* Slightly bolder */
+  color: #FFFFFF;
+  /* White text */
+  text-decoration: none;
+  position: relative;
+  padding: 4px 0;
+  letter-spacing: 0.05em;
+  /* More spacing */
+  text-transform: uppercase;
+  /* Uppercase as shown in reference */
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.link:hover {
+  color: var(--gold);
+}
+
+.navCta {
+  display: none;
+}
+
+.desktopCta {
+  padding: 12px 28px;
+  font-size: 0.9rem;
+  /* Optional: Adjust CTA button colors if needed to contrast with black */
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+}
+
+.desktopCta:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #FFFFFF;
+  /* White hamburger icons */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile */
+@media (max-width: 960px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .desktopCta {
+    display: none;
+  }
+
+  .links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: #000;
+    /* Black for mobile menu too */
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    padding: 40px;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+  }
+
+  .links.open {
+    right: 0;
+  }
+
+  .link {
+    font-size: 1.1rem;
+  }
+
+  .navCta {
+    display: inline-flex;
+    margin-top: 12px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
