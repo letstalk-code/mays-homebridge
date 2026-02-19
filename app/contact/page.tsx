@@ -221,21 +221,29 @@ export default function ContactPage() {
                 <span className={styles.contactIcon}>&#128241;</span>
                 <p>
                   <strong>Phone:</strong><br />
-                  <a href="tel:+10000000000">(000) 000-0000</a>
+                  <a href="tel:+12513509282">(251) 350-9282</a>
                 </p>
               </div>
               <div className={styles.contactDetail}>
                 <span className={styles.contactIcon}>&#128205;</span>
                 <p>
-                  <strong>Location:</strong><br />
-                  Indianapolis, IN [Example]
+                  <strong>Address:</strong><br />
+                  6800 Moffett road<br />
+                  Mobile, Al 36618
+                </p>
+              </div>
+              <div className={styles.contactDetail}>
+                <span className={styles.contactIcon}>&#127757;</span>
+                <p>
+                  <strong>Service Areas:</strong><br />
+                  Mobile, Al and surrounding areas
                 </p>
               </div>
               <div className={styles.contactDetail}>
                 <span className={styles.contactIcon}>&#128337;</span>
                 <p>
                   <strong>Office Hours:</strong><br />
-                  Monday-Friday, 9am-6pm | Saturday by appointment
+                  Monday-Friday, 9am-5pm | Saturday by appointment
                 </p>
               </div>
             </div>
@@ -272,7 +280,7 @@ export default function ContactPage() {
                 type="tel"
                 id="phone"
                 name="phone"
-                placeholder="(000) 000-0000"
+                placeholder="(251) 350-9282"
                 required
               />
             </div>
