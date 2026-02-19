@@ -470,6 +470,12 @@
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  height: 100%;
+  /* For uniform height if needed */
+}
+
+.benefitCardWide {
+  grid-column: span 2;
 }
 
 /* Enhanced Hover for Benefit Cards */
@@ -1042,6 +1048,16 @@
 
   .benefitsGrid {
     grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .benefitCard {
+    padding: 24px 20px;
+  }
+
+  .benefitCardWide {
+    grid-column: span 1;
   }
 
   .testimonialGrid {

@@ -272,7 +272,7 @@ export default function HomePage() {
               exactly what to do, when, and why.
             </p>
           </div>
-          <div className={`${styles.benefitCard} fade-in stagger-5`} style={{ gridColumn: 'span 2' }}>
+          <div className={`${styles.benefitCard} ${styles.benefitCardWide} fade-in stagger-5`}>
             <div className={styles.benefitIcon}>&#128170;</div>
             <h3>Avoid The $30K+ Mistakes</h3>
             <p>
