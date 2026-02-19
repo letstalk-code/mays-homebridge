@@ -27,8 +27,8 @@ export default function AboutPage() {
           </div>
           <div className="fade-in-right">
             <Image
-              src="/images/qunietta-beige.jpg"
-              alt="Qunietta L May - Founder of May's HomeBridge"
+              src="/images/husband-and-wife.png"
+              alt="Happy husband and wife celebrating their new home"
               width={500}
               height={600}
               className={styles.aboutHeroImage}

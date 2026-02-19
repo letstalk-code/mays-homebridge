@@ -67,6 +67,15 @@ export default function HomePage() {
 
       {/* ========== PAIN SECTION ========== */}
       <section className={styles.painSection}>
+        <div className={styles.sectionLogo}>
+          <Image
+            src="/images/adobe-express.png"
+            alt="Adobe Express"
+            width={150}
+            height={60}
+            className={styles.sectionLogoImage}
+          />
+        </div>
         <div className={styles.painGrid}>
           <div className={`${styles.painContent} fade-in-right stagger-1`}>
             <span className="section-label">The Reality</span>
@@ -160,45 +169,59 @@ export default function HomePage() {
 
       {/* ========== CREDENTIALS ========== */}
       <section className={styles.credSection}>
-        <div className={`${styles.credContent} fade-in`}>
-          <span className="section-label">Track Record</span>
-          <div className="gold-line"></div>
-          <h2 className="section-title">
-            I&apos;ve Helped Hundreds of Families Navigate The Biggest Financial
-            Decision of Their Lives
-          </h2>
-          <p>I&apos;ve seen every scenario:</p>
-          <div className={styles.credList}>
-            <div className={styles.credItem}>
-              <span className={styles.credBullet}>&#9670;</span>
-              <p>
-                The couple who &ldquo;definitely couldn&apos;t afford it&rdquo; but I found them{" "}
-                <strong>$47,000 in buying power</strong> they didn&apos;t know existed
-              </p>
+        <div className={styles.credGrid}>
+          <div className={`${styles.credContent} fade-in`}>
+            <span className="section-label">Track Record</span>
+            <div className="gold-line-center"></div>
+            <h2 className="section-title">
+              I&apos;ve Helped Hundreds of Families Navigate The Biggest Financial
+              Decision of Their Lives
+            </h2>
+            <p className="mb-8">I&apos;ve seen every scenario:</p>
+            <div className={styles.credList}>
+              <div className={styles.credItem}>
+                <span className={styles.credBullet}>&#9670;</span>
+                <p>
+                  The couple who &ldquo;definitely couldn&apos;t afford it&rdquo; but I found them{" "}
+                  <strong>$47,000 in buying power</strong> they didn&apos;t know existed
+                </p>
+              </div>
+              <div className={styles.credItem}>
+                <span className={styles.credBullet}>&#9670;</span>
+                <p>
+                  The single mom who thought her credit would disqualify her...{" "}
+                  <strong>closed in 45 days</strong>
+                </p>
+              </div>
+              <div className={styles.credItem}>
+                <span className={styles.credBullet}>&#9670;</span>
+                <p>
+                  The young professional who almost overpaid by{" "}
+                  <strong>$35,000</strong> &mdash; we caught it in time and negotiated
+                  them a fair deal
+                </p>
+              </div>
             </div>
-            <div className={styles.credItem}>
-              <span className={styles.credBullet}>&#9670;</span>
-              <p>
-                The single mom who thought her credit would disqualify her...{" "}
-                <strong>closed in 45 days</strong>
-              </p>
-            </div>
-            <div className={styles.credItem}>
-              <span className={styles.credBullet}>&#9670;</span>
-              <p>
-                The young professional who almost overpaid by{" "}
-                <strong>$35,000</strong> &mdash; we caught it in time and negotiated
-                them a fair deal
-              </p>
+
+            <p className="mt-8">
+              I&apos;ve walked hundreds of people through this process. I know where
+              the landmines are. I know what lenders won&apos;t tell you. I know how to
+              negotiate so you don&apos;t leave money on the table.
+            </p>
+
+            <div className={styles.limitBadge}>
+              &#128274; Only 12 new clients per month. Quality over quantity.
             </div>
           </div>
-          <p>
-            I&apos;ve walked hundreds of people through this process. I know where
-            the landmines are. I know what lenders won&apos;t tell you. I know how to
-            negotiate so you don&apos;t leave money on the table.
-          </p>
-          <div className={styles.limitBadge}>
-            &#128274; Only 12 new clients per month. Quality over quantity.
+
+          <div className={`${styles.credImageWrapper} fade-in-left`}>
+            <Image
+              src="/images/new-keys.png"
+              alt="Keys to a new home"
+              width={450}
+              height={800}
+              className={styles.credImage}
+            />
           </div>
         </div>
       </section>
@@ -269,6 +292,18 @@ export default function HomePage() {
           <div className="gold-line-center"></div>
           <h2 className="section-title">What My Clients Say</h2>
         </div>
+
+        {/* High-impact Featured Result Image */}
+        <div className={`${styles.proofFeatured} fade-in`}>
+          <Image
+            src="/images/house-sold.png"
+            alt="Happy clients holding a SOLD sign with May's HomeBridge"
+            width={1200}
+            height={675}
+            className={styles.proofFeaturedImage}
+          />
+        </div>
+
         <div className={styles.testimonialGrid}>
           <div className={`${styles.testimonialCard} fade-in stagger-1`}>
             <div className={styles.quoteIcon}>&ldquo;</div>

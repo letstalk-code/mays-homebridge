@@ -80,6 +80,17 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p>&copy; 2025 May&apos;s HomeBridge &mdash; May Enterprise LLC. All rights reserved.</p>
+          <div className={styles.creator}>
+            Created with <span className={styles.heart}>❤️</span> at{' '}
+            <a
+              href="https://www.CreativelyGrow.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.creatorLink}
+            >
+              Creatively Grow
+            </a>
+          </div>
         </div>
       </div>
     </footer>
