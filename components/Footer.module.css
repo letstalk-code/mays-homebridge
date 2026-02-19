@@ -32,7 +32,8 @@
 .footerLogo {
   height: auto;
   width: auto;
-  max-width: 140px;
+  max-width: 180px;
+  margin-bottom: 20px;
 }
 
 .brandName {
@@ -181,7 +182,8 @@
 
 @media (max-width: 600px) {
   .footer {
-    padding: 60px 0 100px;
+    padding: 60px 0 140px;
+    /* Increased bottom padding for sticky CTA */
   }
 
   .grid {

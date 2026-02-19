@@ -15,11 +15,10 @@ export default function Footer() {
               <Image
                 src="/images/mays-logo.png"
                 alt="May's HomeBridge"
-                width={80}
-                height={80}
+                width={120}
+                height={120}
                 className={styles.footerLogo}
               />
-              <span className={styles.brandName}>May&apos;s HomeBridge</span>
             </div>
             <p className={styles.brandDesc}>
               Your trusted real estate advocate. Building a path to your dream home
@@ -67,11 +66,11 @@ export default function Footer() {
           {/* Contact */}
           <div className={styles.column}>
             <h4 className={styles.columnTitle}>Contact</h4>
-            <a href="mailto:info@mayshomebridge.com" className={styles.footerLink}>
-              info@mayshomebridge.com
+            <a href="mailto:info@mayshomebridgellc.com" className={styles.footerLink}>
+              info@mayshomebridgellc.com
             </a>
-            <a href="tel:+10000000000" className={styles.footerLink}>
-              (000) 000-0000
+            <a href="tel:+13346411516" className={styles.footerLink}>
+              (334) 641-1516
             </a>
             <span className={styles.footerLink}>Mon-Fri, 9am-6pm</span>
             <span className={styles.footerLink}>Sat by appointment</span>
