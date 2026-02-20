@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
 import ScrollObserver from "@/components/ScrollObserver";
-
+import AnimatedCounter from "@/components/AnimatedCounter";
 import TypingEffect from "@/components/TypingEffect";
 
 export const metadata = {
@@ -44,7 +44,7 @@ export default function HomePage() {
               actually knows how to make the numbers work?
             </p>
             <div className={styles.heroCtas}>
-              <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
+              <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary btn-pulse">
                 Book Your Session Now <span className="arrow">&rarr;</span>
               </Link>
               <Link href="/process" className="btn-secondary">
@@ -174,7 +174,7 @@ export default function HomePage() {
             <span className="section-label">Track Record</span>
             <div className="gold-line-center"></div>
             <h2 className="section-title">
-              I&apos;ve Helped Hundreds of Families Navigate The Biggest Financial
+              I&apos;ve Helped <AnimatedCounter end={200} suffix="+" /> Families Navigate The Biggest Financial
               Decision of Their Lives
             </h2>
             <p className="mb-8">I&apos;ve seen every scenario:</p>
@@ -183,21 +183,21 @@ export default function HomePage() {
                 <span className={styles.credBullet}>&#9670;</span>
                 <p>
                   The couple who &ldquo;definitely couldn&apos;t afford it&rdquo; but I found them{" "}
-                  <strong>$47,000 in buying power</strong> they didn&apos;t know existed
+                  <strong><AnimatedCounter end={47000} prefix="$" /> in buying power</strong> they didn&apos;t know existed
                 </p>
               </div>
               <div className={styles.credItem}>
                 <span className={styles.credBullet}>&#9670;</span>
                 <p>
                   The single mom who thought her credit would disqualify her...{" "}
-                  <strong>closed in 45 days</strong>
+                  <strong>closed in <AnimatedCounter end={45} /> days</strong>
                 </p>
               </div>
               <div className={styles.credItem}>
                 <span className={styles.credBullet}>&#9670;</span>
                 <p>
                   The young professional who almost overpaid by{" "}
-                  <strong>$35,000</strong> &mdash; we caught it in time and negotiated
+                  <strong><AnimatedCounter end={35000} prefix="$" /></strong> &mdash; we caught it in time and negotiated
                   them a fair deal
                 </p>
               </div>
@@ -210,7 +210,7 @@ export default function HomePage() {
             </p>
 
             <div className={styles.limitBadge}>
-              &#128274; Only 12 new clients per month. Quality over quantity.
+              &#128274; Only <AnimatedCounter end={12} /> new clients per month. Quality over quantity.
             </div>
           </div>
 
@@ -415,7 +415,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
+            <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary btn-pulse">
               Book Your Session Now <span className="arrow">&rarr;</span>
             </Link>
           </div>
@@ -434,7 +434,7 @@ export default function HomePage() {
           <p>
             Spots fill fast. Usually within the{" "}
             <span className={styles.scarcityHighlight}>
-              first two weeks of each month.
+              first <AnimatedCounter end={14} /> days of each month.
             </span>
           </p>
           <p>
@@ -492,7 +492,7 @@ export default function HomePage() {
             60 minutes. $100 (credited back if we close together). Limited to 12
             clients per month.
           </p>
-          <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
+          <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary btn-pulse">
             Click Here To Choose Your Time Slot{" "}
             <span className="arrow">&rarr;</span>
           </Link>
