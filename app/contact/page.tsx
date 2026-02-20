@@ -191,7 +191,7 @@ export default function ContactPage() {
 
           <div style={{ marginTop: "40px" }}>
             <h3 style={{ marginBottom: '20px', color: 'var(--charcoal)' }}>Book Your HomeBridge Strategy Session Now</h3>
-            <Link href="#" className="btn-primary">
+            <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
               CLICK HERE TO CHOOSE YOUR TIME SLOT <span className="arrow">&rarr;</span>
             </Link>
             <p style={{ marginTop: '16px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
@@ -311,7 +311,7 @@ export default function ContactPage() {
             </ul>
 
             <div style={{ textAlign: "center", marginTop: "40px" }}>
-              <Link href="#" className="btn-primary">
+              <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
                 Stop Waiting. Book Your Session Now. <span className="arrow">&rarr;</span>
               </Link>
             </div>

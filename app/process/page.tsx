@@ -290,7 +290,7 @@ export default function ProcessPage() {
             <strong>I only take 12 clients per month.</strong> Once those spots
             fill, you&apos;re waiting until next month.
           </p>
-          <Link href="/contact" className="btn-primary">
+          <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
             Book Your Session &mdash; Step 1 Starts Here{" "}
             <span className="arrow">&rarr;</span>
           </Link>

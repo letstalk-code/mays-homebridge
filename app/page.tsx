@@ -44,7 +44,7 @@ export default function HomePage() {
               actually knows how to make the numbers work?
             </p>
             <div className={styles.heroCtas}>
-              <Link href="/contact" className="btn-primary">
+              <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
                 Book Your Session Now <span className="arrow">&rarr;</span>
               </Link>
               <Link href="/process" className="btn-secondary">
@@ -415,7 +415,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="/contact" className="btn-primary">
+            <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
               Book Your Session Now <span className="arrow">&rarr;</span>
             </Link>
           </div>
@@ -492,7 +492,7 @@ export default function HomePage() {
             60 minutes. $100 (credited back if we close together). Limited to 12
             clients per month.
           </p>
-          <Link href="/contact" className="btn-primary">
+          <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
             Click Here To Choose Your Time Slot{" "}
             <span className="arrow">&rarr;</span>
           </Link>

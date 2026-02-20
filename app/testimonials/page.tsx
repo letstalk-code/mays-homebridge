@@ -327,8 +327,8 @@ export default function TestimonialsPage() {
             knows how to make it happen.
           </p>
           <div style={{ marginTop: "32px" }}>
-            <Link href="/contact" className="btn-primary">
-              Join The Next Success Story <span className="arrow">&rarr;</span>
+            <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
+              Are You Next? Book Now <span className="arrow">&rarr;</span>
             </Link>
           </div>
           <p style={{ marginTop: "16px", fontSize: "0.9rem", color: "var(--text-light)" }}>
@@ -346,7 +346,7 @@ export default function TestimonialsPage() {
               You could be sending me a message like this six months from now. Or you could still be sitting here wondering if it&apos;s possible. The only difference is the decision you make right now.
             </p>
             <div style={{ marginTop: "24px" }}>
-              <Link href="/contact" className="btn-primary" style={{ background: 'var(--charcoal)', color: '#fff' }}>
+              <Link href="https://app.gohighlevel.com/v2/preview/yG5IuXsjDSJjwlUlqzqe" className="btn-primary" style={{ background: 'var(--charcoal)', color: '#fff' }}>
                 Stop Wondering. Book Your Session. <span className="arrow">&rarr;</span>
               </Link>
             </div>

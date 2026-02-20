@@ -280,7 +280,7 @@ export default function AboutPage() {
           <p style={{ marginBottom: '32px' }}>
             Let&apos;s talk about your situation and whether homeownership makes sense right now &mdash; or if waiting is smarter. You&apos;ll walk away with clarity either way.
           </p>
-          <Link href="/contact" className="btn-primary">
+          <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary">
             Book Your Session Now
           </Link>
         </div>
