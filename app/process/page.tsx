@@ -225,7 +225,7 @@ export default function ProcessPage() {
             <div className={styles.stepList}>
               <div className={styles.stepListItem}>
                 <span className={styles.checkGold}>&#10003;</span>
-                <p>Coordination with the lender, title company, and seller&apos;s agent</p>
+                <p>Coordination with the lender, title company, and seller&apos;s representative</p>
               </div>
               <div className={styles.stepListItem}>
                 <span className={styles.checkGold}>&#10003;</span>
@@ -245,7 +245,7 @@ export default function ProcessPage() {
               <p>Keys. To YOUR house.</p>
             </div>
             <div className={styles.stepInsight}>
-              Most agents disappear after the offer is accepted. I&apos;m with you
+              Most professionals disappear after the offer is accepted. I&apos;m with you
               until the door closes behind you in your new place.
             </div>
           </div>

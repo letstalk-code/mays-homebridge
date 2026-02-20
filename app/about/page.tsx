@@ -167,7 +167,7 @@ export default function AboutPage() {
               <li>What every fee at closing means</li>
               <li>How to avoid the traps that cost first-time buyers $30K+</li>
             </ul>
-            <p style={{ marginTop: '1rem' }}>By the time we close, you&apos;ll know more about homebuying than most agents do.</p>
+            <p style={{ marginTop: '1rem' }}>By the time we close, you&apos;ll know more about homebuying than most professionals do.</p>
           </div>
         </div>
       </section>
@@ -257,7 +257,7 @@ export default function AboutPage() {
             <div className={styles.credsItem}>
               <span className={styles.checkGold}>&#10003;</span>
               <p>
-                <strong>Only agent in the area</strong> who limits client load to
+                <strong>Only professional in the area</strong> who limits client load to
                 ensure quality
               </p>
             </div>

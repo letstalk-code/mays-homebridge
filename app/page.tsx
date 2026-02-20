@@ -319,7 +319,7 @@ export default function HomePage() {
           <div className={`${styles.testimonialCard} fade-in stagger-2`}>
             <div className={styles.quoteIcon}>&ldquo;</div>
             <blockquote>
-              I almost signed with another agent who was pushing me toward a
+              I almost signed with another professional who was pushing me toward a
               house $50K over my real budget. Qunietta walked me through the
               actual numbers and saved me from a disaster.
             </blockquote>
@@ -429,7 +429,7 @@ export default function HomePage() {
           <p>
             Not because I&apos;m trying to sound exclusive. It&apos;s because I physically
             can&apos;t give you the attention you deserve if I&apos;m juggling 40 deals
-            like most agents.
+            like most professionals.
           </p>
           <p>
             Spots fill fast. Usually within the{" "}

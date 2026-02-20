@@ -90,7 +90,7 @@ export default function TestimonialsPage() {
               <strong>What This Shows:</strong> When Sterling says &ldquo;she went above and beyond, doing more than
               anyone could ever ask for&rdquo; &mdash; that&apos;s not just nice words.
               That&apos;s someone who had PROBLEMS (tax issues, complications,
-              stress) and got SOLUTIONS. Most agents would&apos;ve disappeared. I
+              stress) and got SOLUTIONS. Most professionals would&apos;ve disappeared. I
               didn&apos;t.
             </p>
           </div>
@@ -272,7 +272,7 @@ export default function TestimonialsPage() {
           <div className="gold-line"></div>
           <h2>Let me tell you what happened behind these reviews:</h2>
           <p>
-            <strong>Sterling</strong> had tax complications that would&apos;ve derailed most deals. Most agents would&apos;ve said &ldquo;sorry, can&apos;t help you until that&apos;s sorted&rdquo; and moved on to an easier client. I didn&apos;t. I stepped in, sorted it out, and got him to closing.
+            <strong>Sterling</strong> had tax complications that would&apos;ve derailed most deals. Most professionals would&apos;ve said &ldquo;sorry, can&apos;t help you until that&apos;s sorted&rdquo; and moved on to an easier client. I didn&apos;t. I stepped in, sorted it out, and got him to closing.
           </p>
           <p>
             <strong>JaTara</strong> had been waiting a long time. She thought it was impossible. She worked with me, and it became possible. That&apos;s why she&apos;s shouting it with heart emojis &mdash; because she genuinely didn&apos;t think it would happen.
