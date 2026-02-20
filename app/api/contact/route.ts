@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
         if (!GHL_API_KEY || !GHL_LOCATION_ID) {
             console.error('Missing GHL environment variables');
             return NextResponse.json(
-                { error: 'Server configuration error.' },
+                { error: 'Server configuration error. Missing credentials.' },
                 { status: 500 }
             );
         }
@@ -48,8 +48,10 @@ export async function POST(req: NextRequest) {
             phone,
             locationId: GHL_LOCATION_ID,
             tags: ['website-contact-form'],
-            source: "May's HomeBridge Website",
+            source: 'Mays HomeBridge Website',
         };
+
+        console.log('Sending to GHL:', JSON.stringify(contactPayload));
 
         const contactRes = await fetch(`${GHL_BASE}/contacts/`, {
             method: 'POST',
@@ -57,24 +59,32 @@ export async function POST(req: NextRequest) {
             body: JSON.stringify(contactPayload),
         });
 
+        const responseText = await contactRes.text();
+        console.log('GHL response status:', contactRes.status);
+        console.log('GHL response body:', responseText);
+
         if (!contactRes.ok) {
-            const errorText = await contactRes.text();
-            console.error('GHL create contact error:', contactRes.status, errorText);
             return NextResponse.json(
-                { error: 'Failed to submit to CRM. Please try again.' },
+                { error: `GHL error ${contactRes.status}: ${responseText}` },
                 { status: 502 }
             );
         }
 
-        const contactData = await contactRes.json();
+        let contactData;
+        try {
+            contactData = JSON.parse(responseText);
+        } catch {
+            console.error('Failed to parse GHL response:', responseText);
+            return NextResponse.json({ error: 'Invalid GHL response.' }, { status: 502 });
+        }
+
         const contactId = contactData?.contact?.id;
         console.log('GHL contact created/updated:', contactId);
 
         // --- Step 2: Add the message as a Note on the contact ---
         if (contactId && message && message.trim()) {
             const notePayload = {
-                body: `📋 Contact Form Message:\n\n${message.trim()}`,
-                userId: contactId, // GHL note requires userId or can be omitted; some versions need it
+                body: `Contact Form Message:\n\n${message.trim()}`,
             };
 
             const noteRes = await fetch(`${GHL_BASE}/contacts/${contactId}/notes`, {
@@ -84,7 +94,6 @@ export async function POST(req: NextRequest) {
             });
 
             if (!noteRes.ok) {
-                // Don't fail the whole request if the note fails — contact was already saved
                 const noteError = await noteRes.text();
                 console.warn('GHL add note warning:', noteRes.status, noteError);
             } else {
@@ -96,7 +105,7 @@ export async function POST(req: NextRequest) {
     } catch (err) {
         console.error('Contact API error:', err);
         return NextResponse.json(
-            { error: 'Something went wrong. Please try again.' },
+            { error: `Server error: ${String(err)}` },
             { status: 500 }
         );
     }
