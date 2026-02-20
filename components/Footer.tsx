@@ -66,8 +66,8 @@ export default function Footer() {
           {/* Contact */}
           <div className={styles.column}>
             <h4 className={styles.columnTitle}>Contact</h4>
-            <a href="mailto:info@mayshomebridgellc.com" className={styles.footerLink}>
-              info@mayshomebridgellc.com
+            <a href="mailto:msqlmay@mayshomebridgellc.com" className={styles.footerLink}>
+              msqlmay@mayshomebridgellc.com
             </a>
             <a href="tel:+12513509282" className={styles.footerLink}>
               (251) 350-9282

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
+import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
   title: "Book Your Strategy Session - May's HomeBridge",
@@ -212,8 +213,8 @@ export default function ContactPage() {
                 <span className={styles.contactIcon}>&#128231;</span>
                 <p>
                   <strong>Email:</strong><br />
-                  <a href="mailto:info@mayshomebridge.com">
-                    info@mayshomebridge.com
+                  <a href="mailto:msqlmay@mayshomebridgellc.com">
+                    msqlmay@mayshomebridgellc.com
                   </a>
                 </p>
               </div>
@@ -253,49 +254,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <form className={`${styles.form} fade-in-right`}>
-            <div className={styles.formGroup}>
-              <label htmlFor="name">Name *</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Your full name"
-                required
-              />
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="email">Email *</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="phone">Phone *</label>
-              <input
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="(251) 350-9282"
-                required
-              />
-            </div>
-            <div className={styles.formGroup}>
-              <label htmlFor="message">Message (optional)</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Tell me a little about your situation..."
-              />
-            </div>
-            <button type="submit" className={`btn-primary ${styles.submitBtn}`}>
-              Send Message <span className="arrow">&rarr;</span>
-            </button>
-          </form>
+          <ContactForm />
         </div>
       </section>
 
