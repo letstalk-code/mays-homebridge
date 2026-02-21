@@ -20,6 +20,7 @@ export default function ContactForm() {
             email: (form.elements.namedItem('email') as HTMLInputElement).value,
             phone: (form.elements.namedItem('phone') as HTMLInputElement).value,
             message: (form.elements.namedItem('message') as HTMLTextAreaElement).value,
+            source: typeof window !== 'undefined' ? window.location.href : 'Website Contact Form',
         };
 
         try {

@@ -1,12 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const GHL_WEBHOOK_URL =
-    'https://services.leadconnectorhq.com/hooks/mitz5mCTOw4TIRcFGxB6/webhook-trigger/a6a78dd1-4c6e-43e2-bca9-f9f9cb5e8680';
+const GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/mitz5mCTOw4TIRcFGxB6/webhook-trigger/ec503436-7e5f-4a91-a4ad-1dd07f38f017';
 
 export async function POST(req: NextRequest) {
     try {
         const body = await req.json();
-        const { name, email, phone, message } = body;
+        const { name, email, phone, message, source } = body;
 
         // Basic validation
         if (!name || !email || !phone) {
@@ -31,7 +30,7 @@ export async function POST(req: NextRequest) {
                 email,
                 phone,
                 message: message || '',
-                source: 'Website Contact Form',
+                source: source || 'Website Contact Form',
             }),
         });
 

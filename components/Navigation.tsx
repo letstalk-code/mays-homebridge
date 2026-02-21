@@ -48,7 +48,7 @@ export default function Navigation() {
           </Link>
         </div>
 
-        <Link href="https://connect.mayshomebridgellc.com/strategy-session" className={`btn-primary ${styles.desktopCta}`}>
+        <Link href="https://connect.mayshomebridgellc.com/strategy-session" className={`btn-primary btn-pulse ${styles.desktopCta}`}>
           Book Consultation
         </Link>
 
