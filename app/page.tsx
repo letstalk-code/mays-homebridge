@@ -57,7 +57,7 @@ export default function HomePage() {
               src="/images/New-Red.png"
               alt="Qunietta L May - Real Estate Advocate and Founder of May's HomeBridge"
               width={500}
-              height={600}
+              height={750}
               className={styles.heroImage}
               priority
             />
