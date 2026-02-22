@@ -60,7 +60,7 @@ export default function ProcessPage() {
             <h3>The Reality Check</h3>
             <p className={styles.stepContext}><strong>What Happens:</strong></p>
             <p>
-              We sit down (on Zoom) for your 60-minute HomeBridge Strategy
+              We sit down (on Zoom) for your 30-minute HomeBridge Strategy
               Session. This isn&apos;t a sales pitch. It&apos;s an audit of your
               situation.
             </p>
@@ -133,37 +133,39 @@ export default function ProcessPage() {
           <div className={`${styles.stepCard} fade-in`}>
             <div className={styles.stepNumber}>3</div>
             <span className={styles.stepLabel}>Week 4-8</span>
-            <h3>The House Hunt</h3>
+            <h3>The Realtor Connection</h3>
             <p className={styles.stepContext}><strong>What Happens:</strong></p>
             <p>
-              We start looking. But not randomly. Strategically.
+              Just like I connected you with a trusted lender, I now connect you
+              with a trusted realtor from my preferred network &mdash; someone I
+              know will work hard for you and keep your best interests front and center.
             </p>
             <div className={styles.stepSubhead}>What You Get:</div>
             <div className={styles.stepList}>
               <div className={styles.stepListItem}>
                 <span className={styles.checkGold}>&#10003;</span>
-                <p>A customized search based on your REAL criteria (not just what looks pretty online)</p>
+                <p>A personal introduction to a vetted realtor who is the right fit for your situation</p>
               </div>
               <div className={styles.stepListItem}>
                 <span className={styles.checkGold}>&#10003;</span>
-                <p>Tours scheduled around your availability &mdash; no rushing, no pressure</p>
+                <p>Me staying involved throughout the search &mdash; available to advise you on any property you&apos;re considering</p>
               </div>
               <div className={styles.stepListItem}>
                 <span className={styles.checkGold}>&#10003;</span>
-                <p>My honest take on every property: &ldquo;This is overpriced.&rdquo; &ldquo;This foundation is a problem.&rdquo; &ldquo;This is a great deal.&rdquo;</p>
+                <p>Guidance on what to look for and what red flags to avoid</p>
               </div>
               <div className={styles.stepListItem}>
                 <span className={styles.checkGold}>&#10003;</span>
-                <p>Education on what to look for and what to avoid</p>
+                <p>A second set of experienced eyes before you fall in love with the wrong property</p>
               </div>
             </div>
             <div className={styles.stepWalkaway}>
               <strong>What You Walk Away With:</strong>
-              <p>The right house. Not the first house. Not the prettiest house. The house that makes sense for your life and your budget.</p>
+              <p>A trusted realtor in your corner &mdash; and me staying involved to make sure the search stays aligned with your goals and your budget.</p>
             </div>
             <div className={styles.stepInsight}>
-              I&apos;ve walked away from deals that would&apos;ve paid me because they
-              were wrong for the client. I&apos;ll do the same for you.
+              I don&apos;t just hand you a name and step back. I make the intro, stay
+              in the loop, and make sure you have the right support every step of the way.
             </div>
           </div>
 
@@ -283,7 +285,7 @@ export default function ProcessPage() {
             The question is: Are you ready to start?
           </p>
           <p>
-            60 minutes. $100 (credited back if we close together). We&apos;ll figure
+            30 minutes. $100 (credited back if we close together). We&apos;ll figure
             out where you stand, what&apos;s possible for you, and what happens next.
           </p>
           <p>

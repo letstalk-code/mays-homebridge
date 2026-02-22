@@ -489,7 +489,7 @@ export default function HomePage() {
         <div className={`${styles.finalCtaContent} fade-in`}>
           <h2>Book Your HomeBridge Strategy Session</h2>
           <p>
-            60 minutes. $100 (credited back if we close together). Limited to 12
+            30 minutes. $100 (credited back if we close together). Limited to 12
             clients per month.
           </p>
           <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary btn-pulse">

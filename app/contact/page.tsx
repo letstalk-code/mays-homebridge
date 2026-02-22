@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata = {
   title: "Book Your Strategy Session - May's HomeBridge",
   description:
-    "Stop waiting for the perfect time — it doesn't exist. Book your 60-minute HomeBridge Strategy Session for $100 (credited back if we close together).",
+    "Stop waiting for the perfect time — it doesn't exist. Book your 30-minute HomeBridge Strategy Session for $100 (credited back if we close together).",
 };
 
 export default function ContactPage() {
@@ -105,7 +105,7 @@ export default function ContactPage() {
             </div>
             <div className={styles.stepItem}>
               <div className={styles.stepNum}>3</div>
-              <p><strong>We meet on Zoom for 60 minutes.</strong> You&apos;ll get:</p>
+              <p><strong>We meet on Zoom for 30 minutes.</strong> You&apos;ll get:</p>
             </div>
           </div>
 
@@ -196,7 +196,7 @@ export default function ContactPage() {
               CLICK HERE TO CHOOSE YOUR TIME SLOT <span className="arrow">&rarr;</span>
             </Link>
             <p style={{ marginTop: '16px', fontSize: '0.9rem', color: 'var(--text-light)' }}>
-              60 minutes. $100 (credited back if we close together). Limited to 12 clients per month. Let&apos;s stop guessing and start knowing.
+              30 minutes. $100 (credited back if we close together). Limited to 12 clients per month. Let&apos;s stop guessing and start knowing.
             </p>
           </div>
         </div>

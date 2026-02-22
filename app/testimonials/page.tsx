@@ -332,7 +332,7 @@ export default function TestimonialsPage() {
             </Link>
           </div>
           <p style={{ marginTop: "16px", fontSize: "0.9rem", color: "var(--text-light)" }}>
-            60 minutes. $100 (credited back if we work together). Limited to 12
+            30 minutes. $100 (credited back if we work together). Limited to 12
             clients per month.
           </p>
 

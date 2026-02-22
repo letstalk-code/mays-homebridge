@@ -275,7 +275,7 @@ export default function AboutPage() {
         <div className={`${styles.aboutCtaContent} fade-in`}>
           <h2>Book Your HomeBridge Strategy Session <span className="arrow">&rarr;</span></h2>
           <p style={{ color: 'var(--gold)', fontWeight: 700, fontSize: '1.2rem', marginBottom: '16px' }}>
-            60 minutes. $100 (credited back if we work together). Zero pressure.
+            30 minutes. $100 (credited back if we work together). Zero pressure.
           </p>
           <p style={{ marginBottom: '32px' }}>
             Let&apos;s talk about your situation and whether homeownership makes sense right now &mdash; or if waiting is smarter. You&apos;ll walk away with clarity either way.
