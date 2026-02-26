@@ -52,7 +52,7 @@ export default function ContactForm() {
                 <p>
                     Thank you for reaching out. May will be in touch with you shortly.
                     In the meantime, feel free to{' '}
-                    <a href="https://connect.mayshomebridgellc.com/strategy-session">
+                    <a href="/strategy-session">
                         book your strategy session directly
                     </a>
                     .

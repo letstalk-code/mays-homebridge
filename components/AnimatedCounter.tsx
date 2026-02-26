@@ -18,20 +18,24 @@ export default function AnimatedCounter({
   className = '',
 }: AnimatedCounterProps) {
   const [count, setCount] = useState(0);
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const hasAnimated = useRef(false);
   const ref = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
 
+    let animationFrameId: number;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && !hasAnimated) {
-          setHasAnimated(true);
-          const startTime = performance.now();
+        if (entry.isIntersecting && !hasAnimated.current) {
+          hasAnimated.current = true;
+
+          let startTime: number | null = null;
 
           const animate = (now: number) => {
+            if (startTime === null) startTime = now;
             const elapsed = now - startTime;
             const progress = Math.min(elapsed / duration, 1);
             // Ease-out cubic
@@ -39,25 +43,52 @@ export default function AnimatedCounter({
             setCount(Math.floor(eased * end));
 
             if (progress < 1) {
-              requestAnimationFrame(animate);
+              animationFrameId = requestAnimationFrame(animate);
             } else {
               setCount(end);
             }
           };
 
-          requestAnimationFrame(animate);
+          animationFrameId = requestAnimationFrame(animate);
         }
       },
       { threshold: 0.3 }
     );
 
     observer.observe(el);
-    return () => observer.disconnect();
-  }, [end, duration, hasAnimated]);
+
+    return () => {
+      observer.disconnect();
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
+  }, [end, duration]);
 
   return (
-    <span ref={ref} className={className}>
-      {prefix}{count}{suffix}
+    <span
+      ref={ref}
+      className={className}
+      style={{
+        position: 'relative',
+        display: 'inline-block',
+        fontVariantNumeric: 'tabular-nums'
+      }}
+    >
+      {/* Invisible element to set the exact max width for the sentence */}
+      <span style={{ visibility: 'hidden' }}>
+        {prefix}{end.toLocaleString()}{suffix}
+      </span>
+      {/* Visible animating element, absolutely positioned so it literally cannot push words */}
+      <span style={{
+        position: 'absolute',
+        right: 0,
+        top: 0,
+        textAlign: 'right',
+        whiteSpace: 'nowrap'
+      }}>
+        {prefix}{count.toLocaleString()}{suffix}
+      </span>
     </span>
   );
 }

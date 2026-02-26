@@ -1,0 +1,200 @@
+/* ============================================================
+   PACKAGES PAGE — packages.module.css
+   ============================================================ */
+
+/* ── Hero ──────────────────────────────────────────────────── */
+
+.packagesHero {
+  background: radial-gradient(circle at center, #2d2d2d 0%, #1a1a1a 100%);
+  padding: 140px 20px 100px;
+  text-align: center;
+}
+
+.heroSubtext {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 600px;
+  margin: 24px auto 0;
+  line-height: 1.8;
+}
+
+/* ── Grid Section ───────────────────────────────────────────── */
+
+.packagesSection {
+  background: var(--background);
+  padding: 80px 20px 120px;
+}
+
+.packagesGrid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+/* ── Package Card ───────────────────────────────────────────── */
+
+.packageCard {
+  background: var(--charcoal);
+  border: 1px solid rgba(197, 165, 90, 0.25);
+  border-radius: 12px;
+  padding: 40px 36px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.packageCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(197, 165, 90, 0.12);
+  border-color: rgba(197, 165, 90, 0.5);
+}
+
+/* Featured card */
+.packageCard.featured {
+  border: 2px solid var(--gold);
+  box-shadow: 0 0 40px rgba(197, 165, 90, 0.18), 0 8px 32px rgba(0, 0, 0, 0.4);
+  transform: scale(1.02);
+  background: linear-gradient(160deg, #2d2d2d 0%, #1a1a1a 100%);
+}
+
+.packageCard.featured:hover {
+  transform: scale(1.02) translateY(-4px);
+  box-shadow: 0 0 60px rgba(197, 165, 90, 0.25), 0 20px 48px rgba(0, 0, 0, 0.5);
+}
+
+/* ── Featured Badge ─────────────────────────────────────────── */
+
+.featuredBadge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gold-gradient);
+  color: #1a1a1a;
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* ── Card Header ────────────────────────────────────────────── */
+
+.packageName {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.03em;
+  margin: 0 0 8px;
+}
+
+.packagePrice {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  font-weight: 800;
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0 0 20px;
+  line-height: 1.2;
+}
+
+.packageDivider {
+  width: 40px;
+  height: 2px;
+  background: var(--gold-gradient);
+  border: none;
+  margin: 0 0 24px;
+  border-radius: 2px;
+}
+
+/* ── Feature List ───────────────────────────────────────────── */
+
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px;
+  flex: 1;
+}
+
+.featureList li {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  padding: 9px 0 9px 28px;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.featureList li:last-child {
+  border-bottom: none;
+}
+
+.featureList li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 9px;
+  color: var(--gold);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+/* ── CTA Button ─────────────────────────────────────────────── */
+
+.packageCta {
+  margin-top: auto;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 1024px) {
+  .packagesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packageCard.featured {
+    transform: scale(1);
+  }
+
+  .packageCard.featured:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 640px) {
+  .packagesHero {
+    padding: 100px 20px 60px;
+  }
+
+  .packagesGrid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .packageCard {
+    padding: 36px 28px;
+  }
+
+  .packageCard.featured {
+    transform: scale(1);
+  }
+
+  .packageCard.featured:hover {
+    transform: translateY(-4px);
+  }
+}

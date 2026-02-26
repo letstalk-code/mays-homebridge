@@ -43,12 +43,12 @@ export default function Navigation() {
           <Link href="/process" className={styles.link} onClick={closeMenu}>Process</Link>
           <Link href="/testimonials" className={styles.link} onClick={closeMenu}>Testimonials</Link>
           <Link href="/contact" className={styles.link} onClick={closeMenu}>Contact</Link>
-          <Link href="https://connect.mayshomebridgellc.com/strategy-session" className={`btn-primary ${styles.navCta}`} onClick={closeMenu}>
+          <Link href="/strategy-session" className={`btn-primary ${styles.navCta}`} onClick={closeMenu}>
             Book Consultation
           </Link>
         </div>
 
-        <Link href="https://connect.mayshomebridgellc.com/strategy-session" className={`btn-primary btn-pulse ${styles.desktopCta}`}>
+        <Link href="/strategy-session" className={`btn-primary btn-pulse ${styles.desktopCta}`}>
           Book Consultation
         </Link>
 

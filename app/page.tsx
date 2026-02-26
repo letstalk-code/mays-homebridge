@@ -44,7 +44,7 @@ export default function HomePage() {
               actually knows how to make the numbers work?
             </p>
             <div className={styles.heroCtas}>
-              <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary btn-pulse">
+              <Link href="/strategy-session" className="btn-primary btn-pulse">
                 Book Your Session Now <span className="arrow">&rarr;</span>
               </Link>
               <Link href="/process" className="btn-secondary">
@@ -197,7 +197,7 @@ export default function HomePage() {
                 <span className={styles.credBullet}>&#9670;</span>
                 <p>
                   The young professional who almost overpaid by{" "}
-                  <strong><AnimatedCounter end={35000} prefix="$" /></strong> &mdash; we caught it in time and negotiated
+                  <strong><AnimatedCounter end={35000} prefix="$" /></strong> we caught it in time and negotiated
                   them a fair deal
                 </p>
               </div>
@@ -415,7 +415,7 @@ export default function HomePage() {
           </div>
 
           <div className="text-center">
-            <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary btn-pulse">
+            <Link href="/strategy-session" className="btn-primary btn-pulse">
               Book Your Session Now <span className="arrow">&rarr;</span>
             </Link>
           </div>
@@ -492,7 +492,7 @@ export default function HomePage() {
             30 minutes. $100 (credited back if we close together). Limited to 12
             clients per month.
           </p>
-          <Link href="https://connect.mayshomebridgellc.com/strategy-session" className="btn-primary btn-pulse">
+          <Link href="/strategy-session" className="btn-primary btn-pulse">
             Click Here To Choose Your Time Slot{" "}
             <span className="arrow">&rarr;</span>
           </Link>
