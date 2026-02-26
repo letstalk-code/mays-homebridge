@@ -15,17 +15,15 @@ export default function StrategySessionPage() {
                     <div className="gold-line-center"></div>
                     <h1 className="section-title">Book Your Strategy Session</h1>
                     <p className={styles.subtitle}>
-                        Choose a date and time below that works best for you. We look forward to talking!
+                        Complete the information below to secure your session. After payment, you will be able to choose your preferred date and time.
                     </p>
                 </div>
 
                 <div className={styles.calendarWrapper}>
                     <iframe
-                        src="https://link.creativelygrow.com/widget/booking/35hnKJcRvTpaCW4j1tl1"
-                        style={{ width: "100%", border: "none", overflow: "hidden" }}
-                        scrolling="no"
-                        id="35hnKJcRvTpaCW4j1tl1_1771888351169"
-                        title="Book a Strategy Session"
+                        src="https://connect.mayshomebridgellc.com/strategy-session"
+                        style={{ width: "100%", height: "800px", border: "none" }}
+                        title="Book a Strategy Session Checkout"
                     />
                     <Script src="https://link.creativelygrow.com/js/form_embed.js" strategy="lazyOnload" />
                 </div>

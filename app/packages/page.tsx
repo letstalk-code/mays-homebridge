@@ -129,7 +129,7 @@ export default function PackagesPage() {
                 ))}
               </ul>
 
-              <Link href="/strategy-session" className={`btn-primary btn-pulse ${styles.packageCta}`}>
+              <Link href="https://connect.mayshomebridgellc.com/packages-checkout" className={`btn-primary btn-pulse ${styles.packageCta}`}>
                 Get Started
               </Link>
             </div>
