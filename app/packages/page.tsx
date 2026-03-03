@@ -10,6 +10,19 @@ export const metadata = {
 
 const packages = [
   {
+    id: "crsk",
+    name: "Credit Readiness Starter Kit",
+    price: "$600",
+    featured: false,
+    features: [
+      "Credit profile review & score analysis",
+      "Personalized credit repair action plan",
+      "Debt-to-income ratio breakdown",
+      "Timeline to mortgage-ready status",
+      "1 follow-up advisory call (30 min)",
+    ],
+  },
+  {
     id: "foundation",
     name: "The Foundation",
     price: "$1,700",
@@ -25,7 +38,7 @@ const packages = [
   {
     id: "blueprint",
     name: "The Blueprint",
-    price: "$2,300",
+    price: "$2,500",
     featured: false,
     features: [
       "Everything in The Foundation",
