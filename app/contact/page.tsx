@@ -1,6 +1,6 @@
 import Link from "next/link";
 import styles from "./page.module.css";
-import ContactForm from "@/components/ContactForm";
+import GHLContactForm from "@/components/GHLContactForm";
 
 export const metadata = {
   title: "Book Your Strategy Session - May's HomeBridge",
@@ -254,7 +254,7 @@ export default function ContactPage() {
             </p>
           </div>
 
-          <ContactForm />
+          <GHLContactForm />
         </div>
       </section>
 
