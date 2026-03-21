@@ -86,7 +86,7 @@ export async function POST(req: NextRequest) {
             '',
             '— IDENTIFICATION —',
             `Driver\'s License #: ${dlNumber || 'Not provided'}`,
-            `SSN (last 4): ${ssn || 'Not provided'}`,
+            `SSN: ${ssn || 'Not provided'}`,
             '',
             '— EMPLOYMENT —',
             `Place of Employment: ${employer || 'Not provided'}`,

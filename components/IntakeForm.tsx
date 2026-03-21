@@ -158,8 +158,8 @@ export default function IntakeForm() {
                     <input type="text" id="dlNumber" name="dlNumber" placeholder="DL12345678" disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
-                    <label htmlFor="ssn">Social Security # <span className={styles.optional}>(last 4 digits)</span></label>
-                    <input type="text" id="ssn" name="ssn" placeholder="XXXX" maxLength={4} disabled={disabled} />
+                    <label htmlFor="ssn">Social Security #</label>
+                    <input type="text" id="ssn" name="ssn" placeholder="XXX-XX-XXXX" maxLength={11} disabled={disabled} />
                 </div>
             </div>
 
