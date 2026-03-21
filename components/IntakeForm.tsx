@@ -26,7 +26,6 @@ export default function IntakeForm() {
         };
 
         const data = {
-            // Personal
             firstName: get('firstName'),
             lastName: get('lastName'),
             dob: get('dob'),
@@ -36,28 +35,22 @@ export default function IntakeForm() {
             city: get('city'),
             state: get('state'),
             zip: get('zip'),
-            // Identification
             dlNumber: get('dlNumber'),
             ssn: get('ssn'),
-            // Employment
             employer: get('employer'),
             jobTitle: get('jobTitle'),
             monthlyIncome: get('monthlyIncome'),
-            // Financial
             savings: get('savings'),
             loanAmount: get('loanAmount'),
             downPayment: get('downPayment'),
-            // Property
             commercialInterest: getRadio('commercialInterest'),
             residentialInterest: getRadio('residentialInterest'),
             moveInDate: get('moveInDate'),
             preferredLocation: get('preferredLocation'),
-            // Experience
             firstTimeBuyer: getRadio('firstTimeBuyer'),
             creditAssistance: getRadio('creditAssistance'),
             hasAssets: getRadio('hasAssets'),
             assetsDescription: get('assetsDescription'),
-            // Referral
             referral: get('referral'),
         };
 
@@ -104,48 +97,48 @@ export default function IntakeForm() {
 
             <div className={styles.row}>
                 <div className={styles.formGroup}>
-                    <label htmlFor="firstName">First Name *</label>
+                    <label htmlFor="firstName">First Name</label>
                     <input type="text" id="firstName" name="firstName" placeholder="Jane" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
-                    <label htmlFor="lastName">Last Name *</label>
+                    <label htmlFor="lastName">Last Name</label>
                     <input type="text" id="lastName" name="lastName" placeholder="Smith" required disabled={disabled} />
                 </div>
             </div>
 
             <div className={styles.row}>
                 <div className={styles.formGroup}>
-                    <label htmlFor="dob">Date of Birth <span className={styles.optional}>(optional)</span></label>
-                    <input type="date" id="dob" name="dob" disabled={disabled} />
+                    <label htmlFor="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
-                    <label htmlFor="phone">Phone Number *</label>
+                    <label htmlFor="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" placeholder="(251) 555-0000" required disabled={disabled} />
                 </div>
             </div>
 
             <div className={styles.formGroup}>
-                <label htmlFor="email">Email Address *</label>
+                <label htmlFor="email">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="jane@email.com" required disabled={disabled} />
             </div>
 
             <div className={styles.formGroup}>
                 <label htmlFor="address">Street Address</label>
-                <input type="text" id="address" name="address" placeholder="123 Main St" disabled={disabled} />
+                <input type="text" id="address" name="address" placeholder="123 Main St" required disabled={disabled} />
             </div>
 
             <div className={styles.row3}>
                 <div className={styles.formGroup}>
                     <label htmlFor="city">City</label>
-                    <input type="text" id="city" name="city" placeholder="Mobile" disabled={disabled} />
+                    <input type="text" id="city" name="city" placeholder="Mobile" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="AL" maxLength={2} disabled={disabled} />
+                    <input type="text" id="state" name="state" placeholder="AL" maxLength={2} required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="zip">Zip Code</label>
-                    <input type="text" id="zip" name="zip" placeholder="36601" disabled={disabled} />
+                    <input type="text" id="zip" name="zip" placeholder="36601" required disabled={disabled} />
                 </div>
             </div>
 
@@ -155,11 +148,11 @@ export default function IntakeForm() {
             <div className={styles.row}>
                 <div className={styles.formGroup}>
                     <label htmlFor="dlNumber">Driver&apos;s License #</label>
-                    <input type="text" id="dlNumber" name="dlNumber" placeholder="DL12345678" disabled={disabled} />
+                    <input type="text" id="dlNumber" name="dlNumber" placeholder="DL12345678" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="ssn">Social Security #</label>
-                    <input type="text" id="ssn" name="ssn" placeholder="XXX-XX-XXXX" maxLength={11} disabled={disabled} />
+                    <input type="text" id="ssn" name="ssn" placeholder="XXX-XX-XXXX" maxLength={11} required disabled={disabled} />
                 </div>
             </div>
 
@@ -169,17 +162,17 @@ export default function IntakeForm() {
             <div className={styles.row}>
                 <div className={styles.formGroup}>
                     <label htmlFor="employer">Place of Employment</label>
-                    <input type="text" id="employer" name="employer" placeholder="Acme Corp" disabled={disabled} />
+                    <input type="text" id="employer" name="employer" placeholder="Acme Corp" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="jobTitle">Job Title</label>
-                    <input type="text" id="jobTitle" name="jobTitle" placeholder="Manager" disabled={disabled} />
+                    <input type="text" id="jobTitle" name="jobTitle" placeholder="Manager" required disabled={disabled} />
                 </div>
             </div>
 
             <div className={styles.formGroup}>
                 <label htmlFor="monthlyIncome">Monthly Income</label>
-                <input type="text" id="monthlyIncome" name="monthlyIncome" placeholder="$0,000" disabled={disabled} />
+                <input type="text" id="monthlyIncome" name="monthlyIncome" placeholder="$0,000" required disabled={disabled} />
             </div>
 
             {/* FINANCIAL */}
@@ -188,15 +181,15 @@ export default function IntakeForm() {
             <div className={styles.row3}>
                 <div className={styles.formGroup}>
                     <label htmlFor="savings">Amount in Savings</label>
-                    <input type="text" id="savings" name="savings" placeholder="$0,000" disabled={disabled} />
+                    <input type="text" id="savings" name="savings" placeholder="$0,000" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="loanAmount">Desired Loan Amount</label>
-                    <input type="text" id="loanAmount" name="loanAmount" placeholder="$000,000" disabled={disabled} />
+                    <input type="text" id="loanAmount" name="loanAmount" placeholder="$000,000" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="downPayment">Desired Down Payment</label>
-                    <input type="text" id="downPayment" name="downPayment" placeholder="$0,000" disabled={disabled} />
+                    <input type="text" id="downPayment" name="downPayment" placeholder="$0,000" required disabled={disabled} />
                 </div>
             </div>
 
@@ -208,10 +201,10 @@ export default function IntakeForm() {
                     <label>Interested in Commercial Property?</label>
                     <div className={styles.radioGroup}>
                         <label className={styles.radioLabel}>
-                            <input type="radio" name="commercialInterest" value="Yes" disabled={disabled} /> Yes
+                            <input type="radio" name="commercialInterest" value="Yes" required disabled={disabled} /> Yes
                         </label>
                         <label className={styles.radioLabel}>
-                            <input type="radio" name="commercialInterest" value="No" disabled={disabled} /> No
+                            <input type="radio" name="commercialInterest" value="No" required disabled={disabled} /> No
                         </label>
                     </div>
                 </div>
@@ -219,10 +212,10 @@ export default function IntakeForm() {
                     <label>Interested in Residential Property?</label>
                     <div className={styles.radioGroup}>
                         <label className={styles.radioLabel}>
-                            <input type="radio" name="residentialInterest" value="Yes" disabled={disabled} /> Yes
+                            <input type="radio" name="residentialInterest" value="Yes" required disabled={disabled} /> Yes
                         </label>
                         <label className={styles.radioLabel}>
-                            <input type="radio" name="residentialInterest" value="No" disabled={disabled} /> No
+                            <input type="radio" name="residentialInterest" value="No" required disabled={disabled} /> No
                         </label>
                     </div>
                 </div>
@@ -231,11 +224,11 @@ export default function IntakeForm() {
             <div className={styles.row}>
                 <div className={styles.formGroup}>
                     <label htmlFor="moveInDate">Desired Move-In Date</label>
-                    <input type="date" id="moveInDate" name="moveInDate" disabled={disabled} />
+                    <input type="date" id="moveInDate" name="moveInDate" required disabled={disabled} />
                 </div>
                 <div className={styles.formGroup}>
                     <label htmlFor="preferredLocation">Preferred City &amp; State</label>
-                    <input type="text" id="preferredLocation" name="preferredLocation" placeholder="Mobile, AL" disabled={disabled} />
+                    <input type="text" id="preferredLocation" name="preferredLocation" placeholder="Mobile, AL" required disabled={disabled} />
                 </div>
             </div>
 
@@ -246,10 +239,10 @@ export default function IntakeForm() {
                 <label>First time purchasing a home?</label>
                 <div className={styles.radioGroup}>
                     <label className={styles.radioLabel}>
-                        <input type="radio" name="firstTimeBuyer" value="Yes" disabled={disabled} /> Yes
+                        <input type="radio" name="firstTimeBuyer" value="Yes" required disabled={disabled} /> Yes
                     </label>
                     <label className={styles.radioLabel}>
-                        <input type="radio" name="firstTimeBuyer" value="No" disabled={disabled} /> No
+                        <input type="radio" name="firstTimeBuyer" value="No" required disabled={disabled} /> No
                     </label>
                 </div>
             </div>
@@ -258,10 +251,10 @@ export default function IntakeForm() {
                 <label>Do you need credit assistance?</label>
                 <div className={styles.radioGroup}>
                     <label className={styles.radioLabel}>
-                        <input type="radio" name="creditAssistance" value="Yes" disabled={disabled} /> Yes
+                        <input type="radio" name="creditAssistance" value="Yes" required disabled={disabled} /> Yes
                     </label>
                     <label className={styles.radioLabel}>
-                        <input type="radio" name="creditAssistance" value="No" disabled={disabled} /> No
+                        <input type="radio" name="creditAssistance" value="No" required disabled={disabled} /> No
                     </label>
                 </div>
             </div>
@@ -274,6 +267,7 @@ export default function IntakeForm() {
                             type="radio"
                             name="hasAssets"
                             value="Yes"
+                            required
                             disabled={disabled}
                             onChange={() => setHasAssets('Yes')}
                         /> Yes
@@ -283,6 +277,7 @@ export default function IntakeForm() {
                             type="radio"
                             name="hasAssets"
                             value="No"
+                            required
                             disabled={disabled}
                             onChange={() => setHasAssets('No')}
                         /> No
@@ -297,6 +292,7 @@ export default function IntakeForm() {
                         id="assetsDescription"
                         name="assetsDescription"
                         placeholder="List any vehicles, real estate, investments, etc."
+                        required
                         disabled={disabled}
                     />
                 </div>
@@ -307,7 +303,7 @@ export default function IntakeForm() {
 
             <div className={styles.formGroup}>
                 <label htmlFor="referral">How were you referred to May&apos;s HomeBridge?</label>
-                <input type="text" id="referral" name="referral" placeholder="Friend, social media, Google…" disabled={disabled} />
+                <input type="text" id="referral" name="referral" placeholder="Friend, social media, Google…" required disabled={disabled} />
             </div>
 
             {/* AGREEMENT */}
