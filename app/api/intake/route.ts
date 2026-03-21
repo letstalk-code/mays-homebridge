@@ -48,7 +48,7 @@ export async function POST(req: NextRequest) {
                 state: state || '',
                 postalCode: zip || '',
                 source: 'Home Application Form',
-                tags: ['intake-form'],
+                tags: ['intake-form', 'intake-submitted'],
             }),
         });
 
