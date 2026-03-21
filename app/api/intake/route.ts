@@ -1,15 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-const GHL_API_KEY = process.env.GHL_API_KEY ?? '';
-const GHL_LOCATION_ID = process.env.GHL_LOCATION_ID ?? '';
-const GHL_BASE = 'https://services.leadconnectorhq.com';
-const GHL_VERSION = '2021-07-28';
-
-const headers = {
-    'Content-Type': 'application/json',
-    Authorization: `Bearer ${GHL_API_KEY}`,
-    Version: GHL_VERSION,
-};
+const GHL_INTAKE_WEBHOOK_URL = process.env.GHL_INTAKE_WEBHOOK_URL ?? '';
 
 export async function POST(req: NextRequest) {
     try {
@@ -33,46 +24,7 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // Step 1: Upsert GHL contact with standard fields
-        const contactRes = await fetch(`${GHL_BASE}/contacts/upsert`, {
-            method: 'POST',
-            headers,
-            body: JSON.stringify({
-                locationId: GHL_LOCATION_ID,
-                firstName,
-                lastName,
-                email,
-                phone,
-                address1: address || '',
-                city: city || '',
-                state: state || '',
-                postalCode: zip || '',
-                source: 'Home Application Form',
-                tags: ['intake-form', 'intake-submitted'],
-            }),
-        });
-
-        if (!contactRes.ok) {
-            const errText = await contactRes.text();
-            console.error('GHL upsert error:', contactRes.status, errText);
-            return NextResponse.json(
-                { error: 'Failed to save your application. Please try again.' },
-                { status: 502 }
-            );
-        }
-
-        const contactData = await contactRes.json();
-        const contactId: string = contactData?.contact?.id ?? '';
-
-        if (!contactId) {
-            console.error('No contact ID returned:', JSON.stringify(contactData));
-            return NextResponse.json(
-                { error: 'Failed to save your application. Please try again.' },
-                { status: 502 }
-            );
-        }
-
-        // Step 2: Add all intake data as a formatted note
+        // Build formatted note
         const noteBody = [
             '=== MAY\'S HOMEBRIDGE — HOME APPLICATION INTAKE ===',
             '',
@@ -114,16 +66,30 @@ export async function POST(req: NextRequest) {
             `Referred By: ${referral || 'Not provided'}`,
         ].join('\n');
 
-        const noteRes = await fetch(`${GHL_BASE}/contacts/${contactId}/notes`, {
+        // POST all data to GHL inbound webhook
+        const webhookRes = await fetch(GHL_INTAKE_WEBHOOK_URL, {
             method: 'POST',
-            headers,
-            body: JSON.stringify({ body: noteBody }),
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                firstName, lastName, email, phone,
+                dob, address, city, state, zip,
+                dlNumber, ssn,
+                employer, jobTitle, monthlyIncome,
+                savings, loanAmount, downPayment,
+                commercialInterest, residentialInterest, moveInDate, preferredLocation,
+                firstTimeBuyer, creditAssistance, hasAssets, assetsDescription,
+                referral,
+                noteBody,
+            }),
         });
 
-        if (!noteRes.ok) {
-            const errText = await noteRes.text();
-            console.error('GHL note error:', noteRes.status, errText);
-            // Contact was saved — don't fail the whole request over the note
+        if (!webhookRes.ok) {
+            const errText = await webhookRes.text();
+            console.error('GHL webhook error:', webhookRes.status, errText);
+            return NextResponse.json(
+                { error: 'Failed to save your application. Please try again.' },
+                { status: 502 }
+            );
         }
 
         console.log('Intake form submitted for:', email);
