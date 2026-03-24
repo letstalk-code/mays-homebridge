@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import styles from '../app/process/page.module.css';
+import styles from '../app/(main)/process/page.module.css';
 
 export default function TimelineProgress() {
   const lineRef = useRef<HTMLDivElement>(null);
