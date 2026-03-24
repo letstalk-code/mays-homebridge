@@ -1,9 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navigation from "@/components/Navigation";
-import Footer from "@/components/Footer";
-import ScrollAnimations from "@/components/ScrollAnimations";
-import MobileStickyCTA from "@/components/MobileStickyCTA";
 
 export const metadata: Metadata = {
   title: "May's HomeBridge - Your Trusted Real Estate Advocate",
@@ -23,13 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
-        <MobileStickyCTA />
-        <ScrollAnimations />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
