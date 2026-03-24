@@ -1,0 +1,324 @@
+.testHero {
+  padding: 60px 0 100px;
+  background: linear-gradient(135deg, #FAFAFA 0%, #F0ECE3 100%);
+  text-align: center;
+}
+
+.testHeroContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ========== TESTIMONIALS ========== */
+.testimonialsSection {
+  padding: 100px 0;
+  background: var(--bg-white);
+}
+
+.testimonialBlock {
+  max-width: 800px;
+  margin: 0 auto 60px;
+  padding: 0 24px;
+}
+
+.testimonialHeader {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.testimonialAvatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--gold-gradient);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--charcoal);
+  flex-shrink: 0;
+}
+
+.testimonialName {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--charcoal);
+}
+
+.testimonialTitle {
+  font-size: 0.85rem;
+  color: var(--text-light);
+}
+
+.testimonialQuote {
+  background: var(--bg-cream);
+  border-radius: 12px;
+  padding: 36px;
+  position: relative;
+  border-left: 4px solid var(--gold);
+  margin-bottom: 24px;
+}
+
+.testimonialQuote p {
+  font-size: 1.05rem;
+  font-style: italic;
+  line-height: 1.85;
+  color: var(--text-secondary);
+}
+
+.quoteIcon {
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  color: var(--gold);
+  opacity: 0.4;
+  line-height: 1;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+
+.resultBox {
+  background: var(--bg-white);
+  border: 1px solid rgba(197, 165, 90, 0.2);
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-bottom: 16px;
+}
+
+.resultLabel {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.resultBox p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.analysisBox {
+  padding: 20px 24px;
+}
+
+.analysisBox p {
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* ========== PATTERN ========== */
+.patternSection {
+  padding: 80px 0;
+  background: var(--bg-cream);
+}
+
+.patternContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.patternList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.patternItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.patternItem p {
+  margin: 0;
+}
+
+.checkGold {
+  color: var(--gold);
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* ========== EMOTIONAL TRUTH ========== */
+.truthSection {
+  padding: 80px 0;
+  background: var(--bg-charcoal);
+}
+
+.truthGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.truthColumn h3 {
+  color: var(--text-white);
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.truthItem {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  margin: 0 auto 12px;
+  width: fit-content;
+}
+
+.truthItem p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.xIcon {
+  color: #cc3333;
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.goldCheck {
+  color: var(--gold);
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+/* ========== WHY THEY FELT THIS WAY ========== */
+.whySection {
+  padding: 100px 0;
+  background: var(--bg-white);
+}
+
+.whyContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.whyContent h2 {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+}
+
+.whyContent p {
+  margin-bottom: 24px;
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.whyCallout {
+  margin-top: 40px;
+  padding: 32px;
+  background: var(--bg-cream);
+  border-left: 4px solid var(--gold);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.5;
+}
+
+
+/* ========== STATS ========== */
+.statsSection {
+  padding: 80px 0;
+  background: var(--bg-white);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 40px auto 0;
+  padding: 0 24px;
+}
+
+.statCard {
+  text-align: center;
+  padding: 24px 16px;
+}
+
+.statNumber {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.statLabel {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* ========== TESTIMONIALS CTA ========== */
+.testCta {
+  padding: 80px 0;
+  background: var(--bg-cream);
+}
+
+.testCtaContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.testCtaContent p {
+  font-size: 1.05rem;
+}
+
+.psBox {
+  margin-top: 40px;
+  text-align: left;
+  max-width: 600px;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.psBox p {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .testHero {
+    padding: 120px 0 60px;
+  }
+
+  .truthGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .testimonialQuote {
+    padding: 24px;
+  }
+}
