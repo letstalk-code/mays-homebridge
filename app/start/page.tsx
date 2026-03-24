@@ -145,9 +145,6 @@ export default function StartPage() {
             {/* ===== MINIMAL FOOTER ===== */}
             <footer className={styles.footer}>
                 <p>May&apos;s HomeBridge LLC &mdash; Mobile, AL</p>
-                <p>
-                    <a href="tel:+12513509282">(251) 350-9282</a>
-                </p>
                 <p className={styles.footerCopy}>&copy; {new Date().getFullYear()} May&apos;s HomeBridge LLC. All rights reserved.</p>
             </footer>
         </div>
