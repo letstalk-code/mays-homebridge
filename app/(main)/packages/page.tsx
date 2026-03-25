@@ -14,6 +14,7 @@ const packages = [
     name: "Credit Readiness Starter Kit",
     price: "$600",
     featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c44f3ac6a0e600f4d057f2",
     features: [
       "Credit profile review & score analysis",
       "Personalized credit repair action plan",
@@ -23,10 +24,39 @@ const packages = [
     ],
   },
   {
+    id: "business-funding",
+    name: "Business Funding Assistance",
+    price: "$1,000",
+    featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c45604fb727d9c905d2795",
+    features: [
+      "Business credit profile review & assessment",
+      "Funding eligibility analysis",
+      "Lender & funding source network introduction",
+      "Personalized funding strategy roadmap",
+      "1 follow-up advisory call (30 min)",
+    ],
+  },
+  {
+    id: "rapid-credit-repair",
+    name: "Rapid Credit Repair",
+    price: "$1,200",
+    featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c455b7c6a0e600f4d05810",
+    features: [
+      "Full 3-bureau credit report audit",
+      "Dispute strategy & filing support",
+      "Score improvement action plan",
+      "Debt prioritization roadmap",
+      "2 follow-up advisory calls (30 min each)",
+    ],
+  },
+  {
     id: "foundation",
     name: "The Foundation",
     price: "$1,700",
     featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c44f9dc6a0e600f4d057f4",
     features: [
       "30-min HomeBridge Strategy Session",
       "Real Affordability Assessment",
@@ -40,6 +70,7 @@ const packages = [
     name: "The Blueprint",
     price: "$2,500",
     featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c44ffafb727d9c905d277e",
     features: [
       "Everything in The Foundation",
       "3 follow-up advisory calls (30 min each)",
@@ -53,6 +84,7 @@ const packages = [
     name: "The Advocate",
     price: "$3,600",
     featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c450a5c6a0e600f4d057f9",
     features: [
       "Everything in The Blueprint",
       "Realtor introduction from preferred network",
@@ -66,6 +98,7 @@ const packages = [
     name: "The Gold Standard",
     price: "$4,300",
     featured: true,
+    href: "https://link.creativelygrow.com/payment-link/69c450eec6a0e600f4d057fb",
     features: [
       "Everything in The Advocate",
       "Full transaction advisory (start to close)",
@@ -79,6 +112,7 @@ const packages = [
     name: "The Platinum Partner",
     price: "$5,200",
     featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c45139fb727d9c905d2783",
     features: [
       "Everything in The Gold Standard",
       "Unlimited advisory calls through closing",
@@ -92,6 +126,7 @@ const packages = [
     name: "The Elite Circle",
     price: "$6,000",
     featured: false,
+    href: "https://link.creativelygrow.com/payment-link/69c4558fc6a0e600f4d0580f",
     features: [
       "Everything in The Platinum Partner",
       "Monthly 1-on-1 strategy call (12 months)",
@@ -142,7 +177,7 @@ export default function PackagesPage() {
                 ))}
               </ul>
 
-              <Link href="https://connect.mayshomebridgellc.com/packages-checkout" className={`btn-primary btn-pulse ${styles.packageCta}`}>
+              <Link href={pkg.href} className={`btn-primary btn-pulse ${styles.packageCta}`}>
                 Get Started
               </Link>
             </div>
