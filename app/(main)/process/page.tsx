@@ -1,16 +1,18 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import TimelineProgress from "@/components/TimelineProgress";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
-  title: "How We Help First-Time Homebuyers | 5-Step System - May's HomeBridge",
+  title: "How We Help Homebuyers in Mobile, AL | 5-Step System - May's HomeBridge",
   description:
-    "Discover the exact 5-step HomeBridge System that turns 'I don't know where to start' into 'Here are my keys.' No guesswork. No surprises. Just a clear path.",
+    "Discover the exact 5-step HomeBridge System for Mobile, AL homebuyers. Turns 'I don't know where to start' into 'Here are my keys.' No guesswork. Just a clear path.",
 };
 
 export default function ProcessPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[{ name: "Process", path: "/process" }]} />
       {/* ========== HERO ========== */}
       <section className={styles.processHero}>
         <div className={styles.processHeroContent}>
@@ -295,6 +297,9 @@ export default function ProcessPage() {
           <Link href="/strategy-session" className="btn-primary btn-pulse">
             Book Your Session &mdash; Step 1 Starts Here{" "}
             <span className="arrow">&rarr;</span>
+          </Link>
+          <Link href="/packages" className="btn-secondary" style={{ marginTop: "16px", display: "inline-block" }}>
+            View All Packages <span className="arrow">&rarr;</span>
           </Link>
         </div>
       </section>

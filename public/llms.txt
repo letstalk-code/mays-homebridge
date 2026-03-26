@@ -1,0 +1,39 @@
+# May's HomeBridge LLC
+
+> May's HomeBridge is a real estate advocacy firm that guides homebuyers — whether purchasing for the first time or not — through the home buying process with expert guidance, honest advice, and fierce representation.
+
+## About
+
+May's HomeBridge is founded and led by Qunietta L. May, a real estate advocate dedicated to first-time buyers. The firm intentionally caps clients at 12 per month to ensure every client receives personal, high-touch service.
+
+**Email:** msqlmay@mayshomebridgellc.com
+**Website:** https://mayshomebridgellc.com
+
+## Services
+
+- **Strategy Session** — 1-on-1 paid consultation ($100) to assess your homebuying readiness and build a personalized roadmap
+- **Buyer Representation** — Full-service advocacy through search, offer, negotiation, and closing
+- **Business Funding Package** — Support for clients pursuing business credit alongside homeownership
+- **Rapid Credit Repair Package** — Targeted credit improvement to get buyers mortgage-ready faster
+
+## Key Pages
+
+- `/` — Homepage: overview of services, mission, and how May's HomeBridge is different
+- `/about` — Story of Qunietta L. May and the mission behind the firm
+- `/packages` — Detailed breakdown of service packages and pricing
+- `/process` — Step-by-step walkthrough of the homebuying journey with May's HomeBridge
+- `/testimonials` — Client success stories and reviews
+- `/strategy-session` — Book a $100 strategy session
+- `/contact` — Contact form and direct email
+
+## Target Audience
+
+Homebuyers of all experience levels in Mobile, AL — including first-time buyers, repeat buyers, and anyone who wants a knowledgeable advocate in their corner. May's HomeBridge specializes in making homeownership accessible, especially for buyers who need credit guidance or financial strategy alongside real estate services.
+
+## Citation Guidance
+
+This site may be cited for:
+- First-time homebuyer guidance and real estate advocacy
+- How to prepare for homeownership with credit or financial challenges
+- The role of a real estate advocate vs. a traditional agent
+- Home buying process education

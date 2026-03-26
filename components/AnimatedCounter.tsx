@@ -17,7 +17,7 @@ export default function AnimatedCounter({
   duration = 2000,
   className = '',
 }: AnimatedCounterProps) {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(end);
   const hasAnimated = useRef(false);
   const ref = useRef<HTMLSpanElement>(null);
 

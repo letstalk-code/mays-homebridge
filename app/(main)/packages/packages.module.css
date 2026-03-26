@@ -109,6 +109,15 @@
   line-height: 1.2;
 }
 
+.packageForWho {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin: -10px 0 20px;
+  line-height: 1.5;
+  opacity: 0.75;
+}
+
 .packageDivider {
   width: 40px;
   height: 2px;

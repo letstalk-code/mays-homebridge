@@ -1,11 +1,12 @@
 import Link from "next/link";
 import styles from "./packages.module.css";
 import ScrollObserver from "@/components/ScrollObserver";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
-  title: "Client Packages | May&apos;s HomeBridge",
+  title: "Client Packages | May's HomeBridge",
   description:
-    "Exclusive real estate strategy and advocacy packages. Choose your level of partnership with Qunietta May.",
+    "Real estate advocacy packages for homebuyers in Mobile, AL. Choose your level of partnership with Qunietta May.",
 };
 
 const packages = [
@@ -14,6 +15,8 @@ const packages = [
     name: "Credit Readiness Starter Kit",
     price: "$600",
     featured: false,
+    cta: "Start Credit Readiness",
+    forWho: "For buyers who need to understand where their credit stands before taking the next step.",
     href: "https://link.creativelygrow.com/payment-link/69c44f3ac6a0e600f4d057f2",
     features: [
       "Credit profile review & score analysis",
@@ -28,6 +31,8 @@ const packages = [
     name: "Business Funding Assistance",
     price: "$1,000",
     featured: false,
+    cta: "Get Business Funding Help",
+    forWho: "For entrepreneurs and side-hustle owners who want to build business credit alongside their homeownership journey.",
     href: "https://link.creativelygrow.com/payment-link/69c45604fb727d9c905d2795",
     features: [
       "Business credit profile review & assessment",
@@ -42,6 +47,8 @@ const packages = [
     name: "Rapid Credit Repair",
     price: "$1,200",
     featured: false,
+    cta: "Start Rapid Credit Repair",
+    forWho: "For buyers who know their credit needs work and want an aggressive, guided plan to get mortgage-ready fast.",
     href: "https://link.creativelygrow.com/payment-link/69c455b7c6a0e600f4d05810",
     features: [
       "Full 3-bureau credit report audit",
@@ -56,6 +63,8 @@ const packages = [
     name: "The Foundation",
     price: "$1,700",
     featured: false,
+    cta: "Build My Foundation",
+    forWho: "For buyers who are ready to start but need a clear roadmap before they take a single step.",
     href: "https://link.creativelygrow.com/payment-link/69c44f9dc6a0e600f4d057f4",
     features: [
       "30-min HomeBridge Strategy Session",
@@ -70,6 +79,8 @@ const packages = [
     name: "The Blueprint",
     price: "$2,500",
     featured: false,
+    cta: "Get The Blueprint",
+    forWho: "For buyers who have their foundation and want ongoing guidance as they work toward mortgage approval.",
     href: "https://link.creativelygrow.com/payment-link/69c44ffafb727d9c905d277e",
     features: [
       "Everything in The Foundation",
@@ -84,6 +95,8 @@ const packages = [
     name: "The Advocate",
     price: "$3,600",
     featured: false,
+    cta: "Become an Advocate Client",
+    forWho: "For buyers who are actively searching and need someone in their corner during property tours and offer negotiations.",
     href: "https://link.creativelygrow.com/payment-link/69c450a5c6a0e600f4d057f9",
     features: [
       "Everything in The Blueprint",
@@ -98,6 +111,8 @@ const packages = [
     name: "The Gold Standard",
     price: "$4,300",
     featured: true,
+    cta: "Get The Gold Standard",
+    forWho: "For buyers who want full transaction support from search to signed — with someone fighting for every dollar at the table.",
     href: "https://link.creativelygrow.com/payment-link/69c450eec6a0e600f4d057fb",
     features: [
       "Everything in The Advocate",
@@ -112,6 +127,8 @@ const packages = [
     name: "The Platinum Partner",
     price: "$5,200",
     featured: false,
+    cta: "Go Platinum",
+    forWho: "For buyers who want white-glove support from start to close, plus 90 days of help after getting their keys.",
     href: "https://link.creativelygrow.com/payment-link/69c45139fb727d9c905d2783",
     features: [
       "Everything in The Gold Standard",
@@ -126,6 +143,8 @@ const packages = [
     name: "The Elite Circle",
     price: "$6,000",
     featured: false,
+    cta: "Join the Elite Circle",
+    forWho: "For serious buyers and investors who want a year-long strategic partner — not just help buying one home.",
     href: "https://link.creativelygrow.com/payment-link/69c4558fc6a0e600f4d0580f",
     features: [
       "Everything in The Platinum Partner",
@@ -140,6 +159,7 @@ const packages = [
 export default function PackagesPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[{ name: "Packages", path: "/packages" }]} />
       <ScrollObserver />
 
       {/* Hero */}
@@ -155,6 +175,36 @@ export default function PackagesPage() {
         </p>
       </section>
 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "name": "May's HomeBridge Service Packages",
+          "url": "https://mayshomebridgellc.com/packages",
+          "itemListElement": packages.map((pkg, i) => ({
+            "@type": "ListItem",
+            "position": i + 1,
+            "item": {
+              "@type": "Service",
+              "name": pkg.name,
+              "description": pkg.features.join(". "),
+              "offers": {
+                "@type": "Offer",
+                "price": pkg.price.replace("$", "").replace(",", ""),
+                "priceCurrency": "USD",
+                "url": pkg.href,
+              },
+              "provider": {
+                "@type": "LocalBusiness",
+                "name": "May's HomeBridge LLC",
+                "url": "https://mayshomebridgellc.com",
+              }
+            }
+          }))
+        })}}
+      />
+
       {/* Packages Grid */}
       <section className={styles.packagesSection}>
         <div className={styles.packagesGrid}>
@@ -169,6 +219,7 @@ export default function PackagesPage() {
 
               <h2 className={styles.packageName}>{pkg.name}</h2>
               <div className={styles.packagePrice}>{pkg.price}</div>
+              <p className={styles.packageForWho}>{pkg.forWho}</p>
               <hr className={styles.packageDivider} />
 
               <ul className={styles.featureList}>
@@ -178,7 +229,7 @@ export default function PackagesPage() {
               </ul>
 
               <Link href={pkg.href} className={`btn-primary btn-pulse ${styles.packageCta}`}>
-                Get Started
+                {pkg.cta}
               </Link>
             </div>
           ))}

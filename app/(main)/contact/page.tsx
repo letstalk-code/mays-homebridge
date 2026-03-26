@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import GHLContactForm from "@/components/GHLContactForm";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "Book Your Strategy Session - May's HomeBridge",
@@ -11,6 +12,7 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[{ name: "Contact", path: "/contact" }]} />
       {/* ========== HERO ========== */}
       <section className={styles.contactHero}>
         <div className={styles.contactHeroContent}>

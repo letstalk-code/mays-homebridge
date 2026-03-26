@@ -41,6 +41,7 @@ export default function Navigation() {
           <Link href="/" className={styles.link} onClick={closeMenu}>Home</Link>
           <Link href="/about" className={styles.link} onClick={closeMenu}>About</Link>
           <Link href="/process" className={styles.link} onClick={closeMenu}>Process</Link>
+          <Link href="/packages" className={styles.link} onClick={closeMenu}>Packages</Link>
           <Link href="/testimonials" className={styles.link} onClick={closeMenu}>Testimonials</Link>
           <Link href="/contact" className={styles.link} onClick={closeMenu}>Contact</Link>
           <Link href="/strategy-session" className={`btn-primary ${styles.navCta}`} onClick={closeMenu}>

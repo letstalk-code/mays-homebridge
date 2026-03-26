@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./page.module.css";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "Why Choose May's HomeBridge - Real Estate That Protects Your Interests",
@@ -11,6 +12,7 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[{ name: "About", path: "/about" }]} />
       {/* ========== HERO ========== */}
       <section className={styles.aboutHero}>
         <div className={styles.aboutHeroGrid}>

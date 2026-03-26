@@ -913,6 +913,46 @@
   transform: rotate(0);
 }
 
+/* ========== FAQ ========== */
+.faqSection {
+  padding: 80px 0;
+  background: var(--bg-cream);
+}
+
+.faqContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.faqHeading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--border-light);
+  padding: 24px 0;
+}
+
+.faqItem:first-of-type {
+  border-top: 1px solid var(--border-light);
+}
+
+.faqQuestion {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.faqAnswer {
+  font-size: 1rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+}
+
+/* ========== FINAL CTA ========== */
 .finalCta {
   padding: 80px 0;
   background: var(--bg-charcoal);

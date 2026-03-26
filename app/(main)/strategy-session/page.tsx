@@ -1,5 +1,6 @@
 import Script from "next/script";
 import styles from "./page.module.css";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
     title: "Book a Strategy Session | May's HomeBridge",
@@ -9,6 +10,7 @@ export const metadata = {
 export default function StrategySessionPage() {
     return (
         <main className={styles.main}>
+      <BreadcrumbSchema crumbs={[{ name: "Strategy Session", path: "/strategy-session" }]} />
             <div className={styles.container}>
                 <div className={styles.header}>
                     <span className="section-label">Get Started</span>

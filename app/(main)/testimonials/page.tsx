@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styles from "./page.module.css";
 import StatsCounter from "@/components/StatsCounter";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata = {
   title: "Client Success Stories - May's HomeBridge Reviews",
@@ -11,6 +12,7 @@ export const metadata = {
 export default function TestimonialsPage() {
   return (
     <>
+      <BreadcrumbSchema crumbs={[{ name: "Testimonials", path: "/testimonials" }]} />
       {/* ========== HERO ========== */}
       <section className={styles.testHero}>
         <div className={styles.testHeroContent}>
@@ -299,7 +301,7 @@ export default function TestimonialsPage() {
             cardClassName={styles.statCard}
             stats={[
               { end: 200, suffix: '+', label: 'Families Helped' },
-              { end: 100, suffix: '%', label: 'Close Rate Under Contract' },
+              { end: 100, suffix: '%', label: 'Client Offer-to-Close Rate' },
               { text: 'Avg.', label: '\u201CAbove and Beyond\u201D experience' },
               { text: 'Mentioned', label: '\u201CSaving Grace\u201D & \u201CSuperhero\u201D' },
             ]}

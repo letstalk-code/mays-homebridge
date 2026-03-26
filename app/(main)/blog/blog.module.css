@@ -1,0 +1,82 @@
+.hero {
+  padding: 80px 24px 60px;
+  text-align: center;
+  background: var(--bg-cream);
+}
+
+.heroSub {
+  max-width: 600px;
+  margin: 16px auto 0;
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  line-height: 1.7;
+}
+
+.postsSection {
+  padding: 60px 24px 80px;
+  background: var(--bg-white);
+}
+
+.postsGrid {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 32px;
+}
+
+.postCard {
+  display: block;
+  padding: 36px;
+  background: var(--bg-cream);
+  border: 1px solid var(--border-light);
+  border-left: 4px solid var(--gold);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.postCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.postMeta {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.postDate {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gold-dark);
+}
+
+.postAuthor {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.postTitle {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.postDescription {
+  font-size: 0.95rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.readMore {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--gold-dark);
+  letter-spacing: 0.03em;
+}
