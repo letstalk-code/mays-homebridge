@@ -495,32 +495,32 @@ export default function HomePage() {
 
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>What exactly does a real estate advocate do?</h3>
-            <p className={styles.faqAnswer}>A real estate advocate works exclusively for the buyer — not the seller, not the lender, not a commission check. May&apos;s HomeBridge represents your interests at every step: navigating offers, negotiating terms, reviewing contracts, and making sure you don&apos;t leave money on the table or walk into a deal you&apos;ll regret.</p>
+            <p className={styles.faqAnswer}>A real estate advocate works exclusively for the buyer. Not the seller, not the lender, not a commission check. May&apos;s HomeBridge represents your interests at every step: navigating offers, negotiating terms, reviewing contracts, and making sure you don&apos;t leave money on the table or walk into a deal you&apos;ll regret.</p>
           </div>
 
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>Do I have to be a first-time buyer to work with May&apos;s HomeBridge?</h3>
-            <p className={styles.faqAnswer}>Not at all. May&apos;s HomeBridge works with all homebuyers — whether it&apos;s your first home, your second, or an investment property. If you want someone genuinely in your corner who knows how to make the numbers work, you&apos;re the right fit.</p>
+            <p className={styles.faqAnswer}>Not at all. May&apos;s HomeBridge works with all homebuyers, whether it&apos;s your first home, your second, or an investment property. If you want someone genuinely in your corner who knows how to make the numbers work, you&apos;re the right fit.</p>
           </div>
 
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>What is the HomeBridge Strategy Session and why does it cost $100?</h3>
-            <p className={styles.faqAnswer}>The Strategy Session is a focused 1-on-1 consultation with Qunietta May. You&apos;ll get an honest assessment of your homebuying readiness, a personalized roadmap, and straight answers about what it will actually take to get your keys. The $100 is credited back toward your closing costs if we work together — so it costs you nothing if we close.</p>
+            <p className={styles.faqAnswer}>The Strategy Session is a focused 1-on-1 consultation with Qunietta May. You&apos;ll get an honest assessment of your homebuying readiness, a personalized roadmap, and straight answers about what it will actually take to get your keys. The $100 is credited back toward your closing costs if we work together, so it costs you nothing if we close.</p>
           </div>
 
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>How is May&apos;s HomeBridge different from a traditional real estate agent?</h3>
-            <p className={styles.faqAnswer}>Traditional agents are paid on commission and sometimes represent both the buyer and seller in the same deal. May&apos;s HomeBridge is a dedicated buyer advocate — paid to protect your interests, not to close a deal at your expense. Qunietta also caps clients at 12 per month, so you&apos;re never just a number.</p>
+            <p className={styles.faqAnswer}>Traditional agents are paid on commission and sometimes represent both the buyer and seller in the same deal. May&apos;s HomeBridge is a dedicated buyer advocate paid to protect your interests, not to close a deal at your expense. Qunietta also caps clients at 12 per month, so you&apos;re never just a number.</p>
           </div>
 
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>What areas does May&apos;s HomeBridge serve?</h3>
-            <p className={styles.faqAnswer}>May&apos;s HomeBridge is based in Mobile, AL and serves Mobile and the surrounding areas. Have questions about whether your area is covered? <Link href="/contact">Reach out directly</Link> — Qunietta is happy to talk it through.</p>
+            <p className={styles.faqAnswer}>May&apos;s HomeBridge is based in Mobile, AL and serves Mobile and the surrounding areas. Have questions about whether your area is covered? <Link href="/contact">Reach out directly</Link>. Qunietta is happy to talk it through.</p>
           </div>
 
           <div className={styles.faqItem}>
             <h3 className={styles.faqQuestion}>How do I get started?</h3>
-            <p className={styles.faqAnswer}>Book a HomeBridge Strategy Session. It&apos;s one 30-minute conversation that maps out your exact path to homeownership — no fluff, no pressure, just a clear plan. <Link href="/strategy-session">Click here to choose your time slot.</Link></p>
+            <p className={styles.faqAnswer}>Book a HomeBridge Strategy Session. It&apos;s one 30-minute conversation that maps out your exact path to homeownership. No fluff, no pressure, just a clear plan. <Link href="/strategy-session">Click here to choose your time slot.</Link></p>
           </div>
         </div>
       </section>
@@ -534,12 +534,12 @@ export default function HomePage() {
             {
               "@type": "Question",
               "name": "What exactly does a real estate advocate do?",
-              "acceptedAnswer": { "@type": "Answer", "text": "A real estate advocate works exclusively for the buyer — not the seller, not the lender, not a commission check. May's HomeBridge represents your interests at every step: navigating offers, negotiating terms, reviewing contracts, and making sure you don't leave money on the table or walk into a deal you'll regret." }
+              "acceptedAnswer": { "@type": "Answer", "text": "A real estate advocate works exclusively for the buyer. Not the seller, not the lender, not a commission check. May's HomeBridge represents your interests at every step: navigating offers, negotiating terms, reviewing contracts, and making sure you don't leave money on the table or walk into a deal you'll regret." }
             },
             {
               "@type": "Question",
               "name": "Do I have to be a first-time buyer to work with May's HomeBridge?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Not at all. May's HomeBridge works with all homebuyers — whether it's your first home, your second, or an investment property." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Not at all. May's HomeBridge works with all homebuyers, whether it's your first home, your second, or an investment property." }
             },
             {
               "@type": "Question",
@@ -549,7 +549,7 @@ export default function HomePage() {
             {
               "@type": "Question",
               "name": "How is May's HomeBridge different from a traditional real estate agent?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Traditional agents are paid on commission and sometimes represent both the buyer and seller in the same deal. May's HomeBridge is a dedicated buyer advocate — paid to protect your interests, not to close a deal at your expense. Qunietta also caps clients at 12 per month." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Traditional agents are paid on commission and sometimes represent both the buyer and seller in the same deal. May's HomeBridge is a dedicated buyer advocate paid to protect your interests, not to close a deal at your expense. Qunietta also caps clients at 12 per month." }
             },
             {
               "@type": "Question",
@@ -559,7 +559,7 @@ export default function HomePage() {
             {
               "@type": "Question",
               "name": "How do I get started?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Book a HomeBridge Strategy Session — a 30-minute conversation that maps out your exact path to homeownership. Visit mayshomebridgellc.com/strategy-session to choose your time slot." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Book a HomeBridge Strategy Session: a 30-minute conversation that maps out your exact path to homeownership. Visit mayshomebridgellc.com/strategy-session to choose your time slot." }
             }
           ]
         })}}

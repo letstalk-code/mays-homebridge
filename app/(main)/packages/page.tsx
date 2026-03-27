@@ -112,7 +112,7 @@ const packages = [
     price: "$4,300",
     featured: true,
     cta: "Get The Gold Standard",
-    forWho: "For buyers who want full transaction support from search to signed — with someone fighting for every dollar at the table.",
+    forWho: "For buyers who want full transaction support from search to signed, with someone fighting for every dollar at the table.",
     href: "https://link.creativelygrow.com/payment-link/69c450eec6a0e600f4d057fb",
     features: [
       "Everything in The Advocate",
@@ -144,7 +144,7 @@ const packages = [
     price: "$6,000",
     featured: false,
     cta: "Join the Elite Circle",
-    forWho: "For serious buyers and investors who want a year-long strategic partner — not just help buying one home.",
+    forWho: "For serious buyers and investors who want a year-long strategic partner, not just help buying one home.",
     href: "https://link.creativelygrow.com/payment-link/69c4558fc6a0e600f4d0580f",
     features: [
       "Everything in The Platinum Partner",

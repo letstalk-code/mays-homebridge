@@ -6,7 +6,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata = {
   title: "Book Your Strategy Session - May's HomeBridge",
   description:
-    "Stop waiting for the perfect time — it doesn't exist. Book your 30-minute HomeBridge Strategy Session for $100 (credited back if we close together).",
+    "Stop waiting for the perfect time. It doesn't exist. Book your 30-minute HomeBridge Strategy Session for $100 (credited back if we close together).",
 };
 
 export default function ContactPage() {
@@ -192,7 +192,7 @@ export default function ContactPage() {
           </div>
           <p style={{ marginTop: '32px', fontSize: '1.2rem' }}><strong>Which person do you want to be?</strong></p>
 
-          <div style={{ marginTop: "40px" }}>
+          <div style={{ marginTop: "40px", textAlign: 'center' }}>
             <h3 style={{ marginBottom: '20px', color: 'var(--charcoal)' }}>Book Your HomeBridge Strategy Session Now</h3>
             <Link href="/strategy-session" className="btn-primary">
               CLICK HERE TO CHOOSE YOUR TIME SLOT <span className="arrow">&rarr;</span>

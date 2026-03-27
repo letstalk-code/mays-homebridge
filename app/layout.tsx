@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: "May's HomeBridge - Your Trusted Real Estate Advocate in Mobile, AL",
   description:
-    "May's HomeBridge guides homebuyers in Mobile, AL through every step of the process — with expert guidance, honest advice, and fierce advocacy. Book your $100 strategy session today.",
+    "May's HomeBridge guides homebuyers in Mobile, AL through every step of the process, with expert guidance, honest advice, and fierce advocacy. Book your $100 strategy session today.",
   keywords:
     "real estate advocate Mobile AL, homebuyer advocate Mobile Alabama, home buying help, buyer representation, May's HomeBridge",
   alternates: {
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "May's HomeBridge",
     title: "May's HomeBridge - Your Trusted Real Estate Advocate in Mobile, AL",
     description:
-      "May's HomeBridge guides homebuyers in Mobile, AL through every step of the process — with expert guidance, honest advice, and fierce advocacy. Book your $100 strategy session today.",
+      "May's HomeBridge guides homebuyers in Mobile, AL through every step of the process, with expert guidance, honest advice, and fierce advocacy. Book your $100 strategy session today.",
     images: [
       {
         url: "/images/New-Red.png",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "May's HomeBridge - Your Trusted Real Estate Advocate in Mobile, AL",
     description:
-      "May's HomeBridge guides homebuyers in Mobile, AL through every step of the process — with expert guidance, honest advice, and fierce advocacy.",
+      "May's HomeBridge guides homebuyers in Mobile, AL through every step of the process, with expert guidance, honest advice, and fierce advocacy.",
     images: ["/images/New-Red.png"],
   },
   verification: {

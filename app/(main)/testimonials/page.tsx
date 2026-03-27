@@ -6,7 +6,7 @@ import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 export const metadata = {
   title: "Client Success Stories - May's HomeBridge Reviews",
   description:
-    "Read real stories from people who thought homeownership was out of reach — and proved themselves wrong with May's HomeBridge. 200+ families helped.",
+    "Read real stories from people who thought homeownership was out of reach and proved themselves wrong with May's HomeBridge. 200+ families helped.",
 };
 
 export default function TestimonialsPage() {
@@ -347,7 +347,7 @@ export default function TestimonialsPage() {
             <p>
               You could be sending me a message like this six months from now. Or you could still be sitting here wondering if it&apos;s possible. The only difference is the decision you make right now.
             </p>
-            <div style={{ marginTop: "24px" }}>
+            <div style={{ marginTop: "24px", textAlign: 'center' }}>
               <Link href="/strategy-session" className="btn-primary btn-pulse" style={{ background: 'var(--charcoal)', color: '#fff' }}>
                 Stop Wondering. Book Your Session. <span className="arrow">&rarr;</span>
               </Link>
