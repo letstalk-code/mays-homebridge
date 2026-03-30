@@ -54,8 +54,8 @@ export async function POST(req: NextRequest) {
                 .map(f => `<li><strong>${f.label}:</strong> <a href="${f.url}">${f.name}</a></li>`)
                 .join('');
 
-            await resend.emails.send({
-                from: 'May\'s HomeBridge <onboarding@resend.dev>',
+            const { error: emailError } = await resend.emails.send({
+                from: 'May\'s HomeBridge <noreply@mayshomebridgellc.com>',
                 to: NOTIFY_EMAIL,
                 subject: `New Document Upload — ${fullName}`,
                 html: `
@@ -64,9 +64,17 @@ export async function POST(req: NextRequest) {
                     <p><strong>Email:</strong> ${email}</p>
                     <h3>Uploaded Documents:</h3>
                     <ul>${fileLines}</ul>
-                    <p><small>Files are stored securely and links are valid for 7 days.</small></p>
+                    <p><small>Download links expire in 1 hour.</small></p>
                 `,
             });
+
+            if (emailError) {
+                console.error('Resend email error:', JSON.stringify(emailError));
+            } else {
+                console.log('Email sent to:', NOTIFY_EMAIL);
+            }
+        } else {
+            console.log('Email skipped — NOTIFY_EMAIL:', NOTIFY_EMAIL, '| RESEND_API_KEY set:', !!process.env.RESEND_API_KEY);
         }
 
         return NextResponse.json({ success: true }, { status: 200 });
