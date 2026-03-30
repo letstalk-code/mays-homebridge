@@ -36,8 +36,8 @@ export async function POST(req: NextRequest) {
             if (file && file.size > 0) {
                 const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_');
                 const filename = `documents/${Date.now()}_${field.key}_${safeName}`;
-                const blob = await put(filename, file, { access: 'public' });
-                uploadedFiles.push({ label: field.label, url: blob.url, name: file.name });
+                const blob = await put(filename, file, { access: 'private' });
+                uploadedFiles.push({ label: field.label, url: blob.downloadUrl, name: file.name });
             }
         }
 
