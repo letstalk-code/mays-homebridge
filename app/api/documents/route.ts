@@ -72,9 +72,10 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ success: true }, { status: 200 });
 
     } catch (err) {
-        console.error('Documents upload error:', err);
+        const message = err instanceof Error ? err.message : String(err);
+        console.error('Documents upload error:', message);
         return NextResponse.json(
-            { error: 'Something went wrong. Please try again.' },
+            { error: message },
             { status: 500 }
         );
     }
