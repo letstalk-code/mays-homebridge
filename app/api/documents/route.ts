@@ -4,6 +4,7 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const NOTIFY_EMAIL = process.env.DOCUMENTS_NOTIFY_EMAIL ?? '';
+const CC_EMAIL = process.env.DOCUMENTS_CC_EMAIL ?? '';
 
 export async function POST(req: NextRequest) {
     try {
@@ -29,15 +30,15 @@ export async function POST(req: NextRequest) {
             { key: 'proofOfAddress', label: 'Proof of Address' },
         ];
 
-        const uploadedFiles: { label: string; url: string; name: string }[] = [];
+        const uploadedFiles: { label: string; blobUrl: string; name: string }[] = [];
 
         for (const field of fileFields) {
             const file = formData.get(field.key) as File | null;
             if (file && file.size > 0) {
                 const safeName = file.name.replace(/[^a-zA-Z0-9._-]/g, '_');
-                const filename = `documents/${Date.now()}_${field.key}_${safeName}`;
-                const blob = await put(filename, file, { access: 'private' });
-                uploadedFiles.push({ label: field.label, url: blob.downloadUrl, name: file.name });
+                const pathname = `documents/${Date.now()}_${field.key}_${safeName}`;
+                const blob = await put(pathname, file, { access: 'private' });
+                uploadedFiles.push({ label: field.label, blobUrl: blob.url, name: file.name });
             }
         }
 
@@ -48,15 +49,23 @@ export async function POST(req: NextRequest) {
             );
         }
 
-        // Send email notification to May
+        // Build download links via our proxy endpoint (generates a fresh signed URL on click — no expiration)
+        const baseUrl = 'https://mayshomebridgellc.com';
+        const fileLines = uploadedFiles
+            .map(f => {
+                const downloadUrl = `${baseUrl}/api/documents/download?file=${encodeURIComponent(f.blobUrl)}`;
+                return `<li><strong>${f.label}:</strong> <a href="${downloadUrl}">${f.name}</a></li>`;
+            })
+            .join('');
+
+        // Send email notification
         if (NOTIFY_EMAIL && process.env.RESEND_API_KEY) {
-            const fileLines = uploadedFiles
-                .map(f => `<li><strong>${f.label}:</strong> <a href="${f.url}">${f.name}</a></li>`)
-                .join('');
+            const recipients = [NOTIFY_EMAIL];
+            if (CC_EMAIL && CC_EMAIL !== NOTIFY_EMAIL) recipients.push(CC_EMAIL);
 
             const { error: emailError } = await resend.emails.send({
                 from: 'May\'s HomeBridge <noreply@mayshomebridgellc.com>',
-                to: NOTIFY_EMAIL,
+                to: recipients,
                 subject: `New Document Upload — ${fullName}`,
                 html: `
                     <h2>New Document Upload</h2>
@@ -64,14 +73,13 @@ export async function POST(req: NextRequest) {
                     <p><strong>Email:</strong> ${email}</p>
                     <h3>Uploaded Documents:</h3>
                     <ul>${fileLines}</ul>
-                    <p><small>Download links expire in 1 hour.</small></p>
                 `,
             });
 
             if (emailError) {
                 console.error('Resend email error:', JSON.stringify(emailError));
             } else {
-                console.log('Email sent to:', NOTIFY_EMAIL);
+                console.log('Email sent to:', recipients.join(', '));
             }
         } else {
             console.log('Email skipped — NOTIFY_EMAIL:', NOTIFY_EMAIL, '| RESEND_API_KEY set:', !!process.env.RESEND_API_KEY);
