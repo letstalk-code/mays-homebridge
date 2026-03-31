@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Navigation.module.css';
@@ -17,6 +18,9 @@ export default function Navigation() {
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const pathname = usePathname();
+  const isDocuments = pathname === '/documents';
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => {
@@ -43,14 +47,18 @@ export default function Navigation() {
           <Link href="/process" className={styles.link} onClick={closeMenu}>Process</Link>
 <Link href="/testimonials" className={styles.link} onClick={closeMenu}>Testimonials</Link>
           <Link href="/contact" className={styles.link} onClick={closeMenu}>Contact</Link>
-          <Link href="/strategy-session" className={`btn-primary ${styles.navCta}`} onClick={closeMenu}>
-            Book Consultation
-          </Link>
+          {!isDocuments && (
+            <Link href="/strategy-session" className={`btn-primary ${styles.navCta}`} onClick={closeMenu}>
+              Book Consultation
+            </Link>
+          )}
         </div>
 
-        <Link href="/strategy-session" className={`btn-primary btn-pulse ${styles.desktopCta}`}>
-          Book Consultation
-        </Link>
+        {!isDocuments && (
+          <Link href="/strategy-session" className={`btn-primary btn-pulse ${styles.desktopCta}`}>
+            Book Consultation
+          </Link>
+        )}
 
         <button
           className={`${styles.hamburger} ${isOpen ? styles.active : ''}`}
